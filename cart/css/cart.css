@@ -2,7 +2,7 @@
     display: flex;
     width:95%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-bottom: 40px;
     border-radius: 10px;
     justify-content: space-between;
@@ -108,8 +108,20 @@
     line-height: 24px;
     color: rgb(48, 54, 60);
 }
+/* #coupon{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border:1px solid  red;
+    width:90%;
+}
+#coupon a{
+    display: flex;
+    align-content: center;
+    border:1px solid  red;
+} */
 
-#total+div button{
+#total+div>button{
     width: 95%;
     padding:3%;
    display: flex;
@@ -122,8 +134,11 @@
     font-weight : 550;
     line-height: 20px;
     text-align: center;
-    color: white;
+    cursor: pointer;
     background-color: #12968f;
+}
+#total+div>button>a{
+    color: white;
 }
 #total+div button:hover{
     background-color: #10847e;
@@ -246,4 +261,8 @@
     font-weight : 600;
     line-height: 24px;
    color:  rgb(48, 54, 60)
+}
+
+@media screen and (max-width:1200px) {
+   
 }

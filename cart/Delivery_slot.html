@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmaeasy Delivery Time Slot</title>
+    <link rel="stylesheet" href="./css/slot.css">
+</head>
+<body>
+    <!-- navbar -->
+    <div id="nav-bar">
+        <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+        <p><img src="" alt=""> 100% Secure Payments</p>
+    </div>
+    <!-- main -->
+    <div id="main">
+  <div id="left-main">
+    <div>
+        <p>Hey there!</p>
+        <p>Choose Express delivery to get your order quicker!</p>
+    </div>
+    <div>
+        <div>
+            <input type="radio" name="imgsel">
+            <span>Tomorrw,10:00 am - 1:00pm</span>
+            <div>
+                <p><img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=32x0" alt="">Express Delivery <span> | ₹15</span></p>
+            </div>
+        </div>
+        <div id="delay">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/026df9cc.svg" alt=""><span>Get₹15 cashback in case of delay</span>
+        </div>
+    </div>
+    <div>
+        <input type="radio" name="imgsel" checked>
+        <span>Tomorrow, 5:00 pm - 10:00 pm</span>
+    </div>
+  </div>
+
+  <div id="right">
+    <a href=""><button>Proceed to Pay <img src="https://assets.pharmeasy.in/web-assets/dist/ac4bb543.svg" alt=""></button></a>
+    <div id="bill-box">
+        <p>Order Summary</p>
+      <div>
+        <div>
+            <p>Total MRP</p>
+            <p id="Discount">Discount on MRP</p>
+        </div>
+        <div>
+            <p id="mrp"></p>
+            <p id="off"></p>
+        </div>
+      </div>
+  <div>
+      <div>
+         <p >Cart Value</p>
+         <p >Delivery charges</p>
+      </div>
+      <div>
+        <p id="cart_value"></p>
+        <p id="delivery_charges"></p>
+      </div>
+ </div>
+    <div id="final">
+       <p id="under">Amount to be paid</p>
+        <p id="final_cost"></p>
+    </div>
+    </div>
+  </div>
+    </div>
+    <script src="./js/slot.js"></script>
+</body>
+</html>

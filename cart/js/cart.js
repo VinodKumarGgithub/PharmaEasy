@@ -1,12 +1,12 @@
 var cartArr = JSON.parse(localStorage.getItem("cart-list")) || []
-
 displaycart();
 
 function displaycart(){
 
   //left part
    let cart_value=0; let MRP_total = 0;
-   
+   let delivery = document.querySelector("#delivery-adress")
+  let cart_empty = document.querySelector("#empty-cart")
   document.querySelector("#item-count>p").textContent = `${cartArr.length}  Items in your Cart`
     document.querySelector("#cart").textContent="";
  
@@ -148,7 +148,7 @@ function displaycart(){
     let rdiv1 = document.createElement("div")
     rdiv.setAttribute("id","r-2")
     
-  //
+  //Bill details
     let rdivin1 = document.createElement("div") ; 
     let rdivin1_1 = document.createElement("div")
      let p = document.createElement("p")
@@ -202,10 +202,27 @@ function displaycart(){
     rdiv.append(rdivin1,rdivin2,rdivin3)
     
   
-    let div1
+   
+    var obj = {
+      mrp : MRP_total.toFixed(2),
+      off : (MRP_total-cart_value).toFixed(2),
+      value : cart_value.toFixed(2),
+      final : cart_value.toFixed(2)
+    }
+    localStorage.setItem("bill-list",JSON.stringify(obj))
 
-
-
-
+  
     document.querySelector("#cost_sum").append(rdiv,rdiv1)
+
+
+    //if cart_empty 
+    if(cartArr.length!=0){
+    document.getElementById("cart_count").textContent= cartArr.length
+  
+    }else{
+    document.getElementById("cart_count").textContent=""
+    rdiv.textContent=""
+    document.querySelector("#cart").append(delivery,cart_empty)
+
+    }
 }
