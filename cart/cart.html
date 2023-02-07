@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="./css/navbar.css">
    <link rel="stylesheet" href="./css/footr.css">
    <link rel="stylesheet" href="./css/cart.css">
+  
 </head>
 <body>
     <!-- navbar -->
@@ -30,7 +31,7 @@
             
             <a href="" id="under"><p><img src="./navbar icons/profile.svg" alt=""><span>Hello, log in</span> </p></a> 
             <a href="" id="under"><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
-            <a href="" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span>Cart</span> </p></a>
+            <a href="./cart.html" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span>Cart</span> </p></a>
         </div>
     </div>
     <div id="catagory-nav">
@@ -54,7 +55,7 @@
         <!-- left div -->
         <div>
            <div id="item-count">
-              <p><span>0</span> Items in your Cart</p>
+              <p >0 Items in your Cart</p>
              <a href="">
                 <div>
                   <img src="https://cdn-icons-png.flaticon.com/128/1538/1538598.png" alt="">
@@ -62,6 +63,8 @@
                </div>
             </a>
            </div>
+       
+          <div id="cart">
            <div id="delivery-adress">
               <a href="">
                <div>
@@ -74,11 +77,17 @@
              <img src="https://assets.pharmeasy.in/web-assets/images/emptyCart.png" alt="">
              <p>Your Medicine/Healthcare cart is empty!</p>
            </div>
+         </div>
         </div>
        <!-- right div -->
-        <div>
-           <div id="total">Cart total: <span> 00.00</span> </div>
-           <div> <button>Proceed to Checkout</button></div>
+        <div id="cost_sum">
+            <div>
+            <div id="total">Cart total:  <span>00.00</span></div>
+            <div>
+                <a href="" id="coupon"></a>
+                <button>Proceed to Checkout</button>
+            </div>
+        </div>
         </div>
     </div>
 
@@ -178,6 +187,8 @@
      
 
 </body>
+<script src="./js/cart.js"></script>
 </html>
-<link rel="js" href="./js/cart.js">
+
+
 <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>

@@ -22,11 +22,20 @@
     align-items: center;
     padding: 15px 20px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight : 600;
+    line-height: 24px;
+    color: rgb(48, 54, 60);
 }
 #item-count div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 18px;
+    font-weight : 530;
+    line-height: 20px;
+    color: rgb(16,132,126);
    
 }
 #item-count img{
@@ -45,7 +54,11 @@
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    /* padding: 15px 20px; */
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight : 550;
+    line-height: 24px;
+    color: rgb(48, 54, 60);
   
 }
 #empty-cart{
@@ -69,17 +82,168 @@
     width: 40%;
     height: auto;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 #total,#total+div{
     padding:30px 10px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
+#cost_sum>div{
+    border-radius:10px ;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#total{
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight : 500;
+    line-height: 24px;
+    color: rgb(48, 54, 60);
+    
+}
+#total>span{
+    font-family: sans-serif;
+    font-size: 21px;
+    font-weight : 600;
+    line-height: 24px;
+    color: rgb(48, 54, 60);
+}
 
 #total+div button{
-    /* width: 90%; */
-    padding:25px 180px;
+    width: 95%;
+    padding:3%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
     margin: auto;
     /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight : 550;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    background-color: #12968f;
+}
+#total+div button:hover{
+    background-color: #10847e;
+}
+
+#item{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  display: flex;
+  justify-content: space-between;
+  padding:20px 24px ;
+}
+
+#item>div:first-child{
+    width: 80%;
+    display: flex;
+    align-content: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight : 400;
+    line-height: 10px;
+    color: rgb(136, 151, 162);
+    
+
+}
+#item>div:first-child p:nth-child(1){
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight : 500;
+    line-height: 24px;
+    color: rgb(48,54,60);
+}
+#img{
+  width:92px;
+  margin-top: 25px;
+}
+#item>div>div:last-child>p:nth-child(4)>span:first-child{
+    text-decoration: line-through;
+}
+#item span:nth-child(2){
+    font-size: 16px;
+    font-weight : 600;
+    color: rgb(48, 54, 60);
+}
+#item span:nth-child(3){
+    font-size: 14px;
+    font-weight : 600;
+    color: rgb(244, 119, 121)
+}
+
+#item>div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#item>div:last-child img{
+    width:24px;
+}
+
+#item>div:last-child select{
+    padding:11px 20px ;
+    border-radius: 10px ;
+    font-size: 14px;
+    border: 1px solid grey;
+}
+#item>div>div:last-child>p:last-child>span{
+    color: black;
+}
+
+
+
+
+/* Bill Summary */
+
+#r-2{
+    margin:30px 0px ;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight : 500;
+    line-height: 26px;
+    color: rgb(110, 120, 126);
+}
+#r-2>div:nth-child(1),#r-2>div:nth-child(2){
+    /* border:1px solid blue; */
+    box-shadow:rgba(8, 8, 12, 0.1) 0px 1px 0px;
+    padding: 20px;
+}
+#r-2>div:nth-child(1) div:last-child>p:last-child{
+    color: #1b6e6f; 
+}
+#r-2>div:last-child{
+    padding:4%;
+}
+#r-2>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+#r-2>div>div span{
+    text-decoration: line-through;
+}
+#r-2>div:nth-child(2){
+    box-shadow:rgba(8, 8, 12, 0.1) 0px 1px 0px;
+}
+#r-2>div:nth-child(2) a{
+ font-size: 16px;
+ font-weight : 500;
+ line-height: 24px;
+ color: #1b6e6f; 
+}
+#r-2>div:last-child p{
+    font-size: 16px;
+    font-weight : 600;
+    line-height: 20px;
+   color:  rgb(48, 54, 60);
+}
+#r-2>div:first-child>div:first-child{
+    font-size: 18px;
+    font-weight : 600;
+    line-height: 24px;
+   color:  rgb(48, 54, 60)
 }

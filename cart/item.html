@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>item's</title>
+    
+    <style>
+        buttom{
+            padding: 17px 40px;
+            border: none;
+            background-color: rgb(11, 73, 73);
+        }
+    </style>
+</head>
+<body>
+    <button>Add</button>
+    <div id="top">
+     
+    </div>
+</body>
+<script src="./js/cart.js"></script>
+</html>
+<script>
+
+document.querySelector("button").addEventListener("click",add)
+
+function add(){
+let arr =  JSON.parse(localStorage.getItem("cart-list") ) || []
+
+let obj = {
+  
+    name :"Dolo (Paracetamol) 650mg Strip Of 15 Tablets",
+    image_url: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg" ,
+    company: "By MICRO LABS" ,
+    tab_Q: "15 Tablet(s) in Strip",
+    MRP : " 29.90",
+    s_price: "₹25.41*" ,
+    offer: "15%OFF",
+    Q : 1
+}
+
+arr.push(obj);
+var p = document.createElement("p")
+     p.textContent = "hello"
+document.querySelector("#top").append(p)
+localStorage.setItem("cart-list",JSON.stringify(arr))
+}
+
+
+</script>
