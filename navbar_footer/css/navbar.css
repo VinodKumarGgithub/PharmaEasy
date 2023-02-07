@@ -46,8 +46,12 @@
      height: 20px;
   }
   #logo-line{
+<<<<<<< HEAD
    font-family: "Times New Roman";
   
+=======
+     font-family: "Times New Roman";
+>>>>>>> fe2e93fd3f455f86e8da9795f397492e19a84332
    font-size: 40px;
    margin-top: 1px;
    color: #10847e;
