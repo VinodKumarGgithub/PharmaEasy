@@ -1,0 +1,306 @@
+*{
+    font-family:  sans-serif;
+}
+
+#firstDiv{
+   
+    background-image:  radial-gradient(150px 150px at 95% 0,rgba(253,186,43,.3) 0,rgba(253,186,43,0) 100%),radial-gradient(150px 150px at 5% 0,rgba(120,213,242,.3) 0,rgba(253,186,43,0) 100%);;
+   
+}
+#label1{
+    /* margin-top: 40px; */
+}
+#searchIp{
+    height: 30px;
+    width: 60%;
+    align-items: center;
+    background-color: white;
+    border: none;
+}
+#search{
+    width: 65%;
+    height: 50px;
+   
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+#b{
+    font-weight: bold;
+}
+#Sbtn{
+ margin-right: -5px;
+}
+#offImg{
+ width: 80%;
+}
+
+#box{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    
+    margin:auto;
+    margin-top: 50px;
+}
+/* priscription css */
+#prescrption{
+    border:1px solid #eef4ff;
+    width: 95%;
+    margin: auto;
+}
+#prescrption>div:first-child{
+    padding: 16px;
+    background-color: #eef4ff;
+    width: 45%;
+}
+#prescrption>div:first-child >div>img{
+   width: 120px;
+}
+#prescrption>div:first-child >div>p+p{
+   color: grey;
+ }
+ #prescrption>div:first-child >div>div{
+   width: fit-content;
+   background-color: #10847e;
+ }
+#prescrption>div:first-child>div:last-child{
+ margin: 0px 0px 0px 20px;
+ font-size: small;
+ 
+}
+
+#prescrption>div:last-child{
+    padding: 24px 32px;
+}
+#prescrption>div:last-child>span{
+    color: #4F585E;
+    font-weight: bold;
+    font-size: small;
+   
+}
+#prescrption>div:last-child>div{
+    /* border: 2px solid red; */
+    align-self: center;
+    margin-bottom: -10px;
+}
+#prescrption>div:last-child>div>div{
+    /* border: 2px solid blue; */
+    width: 50%;
+    margin: 10px ;
+}
+#prescrption>div:last-child>div>div>div{
+    /* border: 1px solid black; */
+    margin: 7px;
+    height:40%;
+}
+#prescrption>div:last-child>div>div>div>span{
+    background-color: #EBF2FF;
+    color: #3661B0;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 3px;
+    font-weight: bold;
+}
+#prescrption>div:last-child>div>div>div>p{
+    color:grey;
+    font-size: 14px;
+    width: 80%;
+    margin: 4px 10px;
+}
+
+/* become a plus member */
+#plusMember{
+    /* background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%); */
+    /* border: 1px solid black; */
+    padding: 32px 40px 24px;
+    background-color: #8678de;
+   height: 200px;
+}
+#plusMember>div{
+    /* border:1px solid red; */
+    
+}
+#plusMember>div>div{
+    /* border: 2px solid grey; */
+    margin: 0px 24px 0px 0px ;
+}
+#plusMember>div>div>div:first-child>span{
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+}
+#plusMember>div>div>div:first-child>span>i{
+    color: #d9a561;
+    
+}
+#plusMember>div>div>div:first-child>span>span{
+    color: #d9a561;
+}
+
+#plusMember>div>div>div:nth-child(2){
+    /* border: 1px solid white; */
+    font-size: 16px;
+    color: #CFC9F2;
+    font-weight: bold;
+}
+#plusMember>div>div>div:last-child>hr{
+    margin: 24px 0px 12px;
+    background-image: linear-gradient(120deg,rgb(255, 255, 0) 40%, #eab60d 20%,blue);
+    height: 4px;;
+}
+
+#plusMember>div>div:nth-child(2){
+    /* border: 1px solid rgb(32, 25, 25); */
+    height: fit-content;
+    
+}
+#plusMember>div>div:nth-child(2)>div:first-child{
+ font-size: 14px;
+ color: white;
+ width: 60%;
+ /* border: 1px solid white; */
+ font-weight:bold;
+
+}
+#plusMember>div>div:nth-child(2)>div>div:first-child{
+   /* border: 1px solid red; */
+   padding: 8px 16px;
+   background-color: #F5B326;
+   width: fit-content;
+   margin: 0px 200px 120px 0px;
+}
+#plusMember>div>div:nth-child(2)>div>div:first-child>span{
+    
+    font-size: 14px;
+    text-align: center;
+}
+#plusMember>div>div:nth-child(2)>div>div:first-child>i{
+    margin: 0px 0px 0px 8px ;
+}
+#plusMember>div>div:nth-child(2)>div>div:last-child{
+  margin-top: -44px;
+}
+
+
+ /* Frequently Booked Lab Tests  */
+ #fbLab{
+    /* border: 1px solid black; */
+    width: 95%;
+    margin: auto;
+ }
+ #fbLab>div:nth-child(2){
+    /* border: 1px solid red; */
+    
+ }
+ #fbLab>div:nth-child(2)>div{
+    /* border:2px dotted #8678de; */
+    border-radius: 7px;
+    width: 23%;
+    padding: 16px 0px 0px 16px;
+    height: 300px;
+ }
+ #fbLab>div:nth-child(2)>div:nth-child(odd){
+    background-color:#F1FAFE;
+ }
+ #fbLab>div:nth-child(2)>div:nth-child(even){
+    background-color: #FDF7E8;
+ }
+ #fbLab>div:nth-child(2)>div>p:first-child{
+    width: fit-content;
+ }
+ #fbLab>div:nth-child(2)>div>p:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+    color: #30363C;
+ }
+ #fbLab>div:nth-child(2)>div>p:nth-child(3){
+    font-size: 14px;
+    color: #6E787E;
+    margin: 12px 0px 8px;
+ }
+ #fbLab>div:nth-child(2)>div>p:nth-child(2),#fbLab>div:nth-child(2)>div>p:nth-child(3){
+   /* border: 1px solid green; */
+   height: 14%;
+
+ }
+
+ #fbLab>div:nth-child(2)>div>div{
+    /* border: 1px solid blue; */
+    height: 30%;
+    margin-top: 49px;
+ }
+ #fbLab>div:nth-child(2)>div>div>div>img{
+    height: 100%;
+ }
+
+ /* Why Choose Us?
+ */
+ #chooseUs{
+    margin:64px 0px 0px;
+    padding: 32px 40px 64px;
+    /* border: 1px solid black; */
+    background-color: #F8F9FF;
+ }
+ #chooseUs >div{
+    padding: 48px 0px 0px;
+    /* border: 1px solid red; */
+    margin: 20px 0px 10px;
+ }
+ #chooseUs >div>div{
+    /* border: 1px solid red; */
+    padding: 20px;
+ }
+ #chooseUs >div>div>img{
+    /* padding: 10px 0px 10px 10px; */
+    height: 100%;
+    width: 40%;
+ }
+ #chooseUs >div>div>div{
+    margin-left: 10px;
+ }
+ #chooseUs >div>div>div>span{
+    font-size: 22px;
+    color: #30363C;
+    font-weight: bold;
+ }
+ #chooseUs >div>div>div>p{
+    font-size: 16px;
+    color:grey;
+    font-weight: 400;
+ }
+
+ /* footer banner */
+
+ #footerBanner{
+    background-color: #D7FAF8;
+    margin: 64px 0px 0px;
+    padding: 0px 40px;
+ }
+ #footerBanner>div{
+    background-image: url("https://assets.pharmeasy.in/apothecary/images/downloadBanner.webp?dim=1280x0&q=100");
+    background-size: cover;
+    /* border: 1px solid black; */
+ }
+ #footerBanner>div>div{
+    width: 25%;
+    margin: auto;
+ }
+
+ /* bottom details - */
+#bottomDetails{
+    width:95%;
+    margin:auto;
+}
+#bottomDetails>div{
+    padding: 64px 0px 0px;
+    margin: -16px 0px 0px;
+}
+#bottomDetails>div>div>p{
+    font-size: 14px;  
+    padding: 0px,0px,24px;
+}
+#bottomDetails>div>div>p>span{
+    font-weight: bold;
+}
