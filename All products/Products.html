@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Shop by catagory</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    <link rel="stylesheet" href="./css/navbar.css">
    <link rel="stylesheet" href="./css/footr.css">
-   <link rel="stylesheet" href="./css/cart.css">
-  
+   <link rel="stylesheet" href="./css/product_page.css">
+   
 </head>
 <body>
     <!-- navbar -->
@@ -20,8 +20,7 @@
             <p id="logo-line">|</p>
            <div>
             <p id="left-label"><img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=32x0" alt="thunder"> Express Delivery to</p>
-            <button id="pincode">Select pincode <img src="./cart icons/downarrow.svg" alt=""></button>
-           
+            <button id="pincode">Select pincode <img src="./navbar icons/downarrow.svg" alt=""></button>
         </div>
         </div>
 
@@ -29,9 +28,9 @@
             
             <a href="https://pey.onelink.me/3krD/2bwqxjrj"><div><button><img src="./navbar icons/mobile1.svg" alt="" ><span>Download App</span> </button></div></a>
             
-            <a href="" ><p><img src="./navbar icons/profile.svg" alt=""><span id="name-display">Hello, log in</span> </p></a> 
-            <a href="" ><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
-            <a href="./cart.html" ><p><img src="./navbar icons/cart.svg" alt=""><span id="cart_count"></span><span>Cart</span> </p></a>
+            <a href="" id="under"><p><img src="./navbar icons/profile.svg" alt=""><span>Hello, log in</span> </p></a> 
+            <a href="" id="under"><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
+            <a href="" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span>Cart</span> </p></a>
         </div>
     </div>
     <div id="catagory-nav">
@@ -48,51 +47,64 @@
         <p>Offers</p>
         <p>Value Store</p>
     </div>
-    </div>    
+    </div>     
      
-       <!-- main -->
-       <div id="pages"></div>
-    <div id="cart-main">
-        <!-- left div -->
+<!-- main -->
+  <div id="prod-main">
+<!-- sort -->
+ 
+    <div id="filter">
         <div>
-           <div id="item-count">
-              <p >0 Items in your Cart</p>
-             <a href="">
-                <div>
-                  <img src="https://cdn-icons-png.flaticon.com/128/1538/1538598.png" alt="">
-                  <p> Save for later</p> 
-               </div>
-            </a>
+            <h3>All Products</h3>
+            <label for="">Sort By:</label>
+            <select name="" id="filter-price">
+                <option value="">Popularity</option>
+                <option value="H-L">Price high to low</option>
+                <option value="L-H">Price low to high</option>
+                <option value="Dis">Discount</option>
+            </select>
            </div>
-       
-          <div id="cart">
-           <div id="delivery-adress">
-              <a href="">
-               <div>
-                   <img src="./cart icons/location.svg" alt=""> 
-                   <p>Delivery to : <span> Select Pincode</span></p>
-               </div>
-             </a>
+       <!-- by catagory -->
+       <div id="products-cat">
+        <h3>Filter</h3>
+           <div>
+            <h3>Catagory</h3>
            </div>
-           <div id="empty-cart">
-             <img src="https://assets.pharmeasy.in/web-assets/images/emptyCart.png" alt="">
-             <p>Your Medicine/Healthcare cart is empty!</p>
+           <div>
+            <p>All products</p>
+            <input type="radio" name="cat" id="radio" checked>
            </div>
-         </div>
-        </div>
-       <!-- right div -->
-        <div id="cost_sum">
+       </div>
+       <!-- filter -->
+       <div id="products-price">
             <div>
-            <div id="total">Cart total:  <span>00.00</span></div>
+              <h3>Price</h3>
+             </div>
+             
+             <div>
+              <p>Below 200</p>
+               <input type="checkbox" value="200" name="check" id="price_filter">
+             </div>
             <div>
-                <!-- <div><button id="coupon"><a href="" ><img src="https://assets.pharmeasy.in/web-assets/images/cartCoupon.svg" alt="Offer"><span>Apply Coupon</span> </a></button></div> -->
-                <button><a href="./Delivery_slot.html" target="_blank">Proceed to Checkout</a> </button>
+              <p>above 499</p>
+             <input type="checkbox" value="499" name="check" id="price_filter-1">
             </div>
-        </div>
         </div>
     </div>
 
+    <!-- right part -->
+   
+    
+    <div id="display-product">
+    
+   </div>
+
+</div>
+
+
+
     <!-- footer -->
+
     <div id="footer">
         <!-- 1st div -->
      <div> 
@@ -106,7 +118,7 @@
                 <a href="">Sell at PharmEasy</a>
             </div>
             <div>
-                <h3>Our Services</h3>
+                <h3> Our Services</h3>
                 <a href="">Order Medicine</a>
                 <a href="">Healthcare Products</a>
                 <a href="">Lab Tests</a>
@@ -188,8 +200,6 @@
      
 
 </body>
-<script src="./js/cart.js"></script>
+<script src="./js/product.js"></script>
 </html>
-
-
 <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>

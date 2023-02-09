@@ -172,7 +172,8 @@
 }
 #img{
   width:92px;
-  margin-top: 25px;
+  /* border: 1px solid red; */
+  margin: 25px;
 }
 #item>div>div:last-child>p:nth-child(4)>span:first-child{
     text-decoration: line-through;

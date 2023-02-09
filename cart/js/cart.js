@@ -12,6 +12,7 @@ function displaycart(){
  
     cartArr.map(function(ele,index){
 
+      // 
     var div = document.createElement("div")
     div.setAttribute("id","item")
     //left part
@@ -25,16 +26,16 @@ function displaycart(){
     // // descripton
     let div12 = document.createElement("div")
     let name = document.createElement("p")
-    name.textContent = ele.name
+    name.textContent = ele.title
     let comp = document.createElement("p")
     comp.textContent = ele.company
     let tab_Q = document.createElement("p")
-    tab_Q.textContent = ele.tab_Q
+    tab_Q.textContent = ""
     let price = document.createElement("p")
     let MRP = document.createElement("span")
-    MRP.textContent ="MRP ₹"+  Number.parseFloat(ele.Q*Number.parseFloat(ele.MRP)).toFixed(2)
+    MRP.textContent ="MRP ₹"+  Number.parseFloat(ele.Q*Number.parseFloat(ele.mrp)).toFixed(2)
     let sellprice = document.createElement("span")
-    sellprice.textContent="₹"+ Number.parseFloat(ele.Q*Number.parseFloat(ele.s_price.slice(1,ele.s_price.length-1))).toFixed(2) +"*"
+    sellprice.textContent="₹"+ Number.parseFloat(ele.Q*Number.parseFloat(ele.offRate)).toFixed(2) +"*"
     let off = document.createElement("span")
     off.textContent=ele.offer
     let delivery = document.createElement("p")
@@ -112,9 +113,9 @@ function displaycart(){
        //cart value calculate
       cart_value=0;  MRP_total = 0;
     cartArr.map(function(sum){
-      let sum1=Number.parseFloat(sum.Q*Number.parseFloat(sum.s_price.slice(1,sum.s_price.length-1)))
+      let sum1=Number.parseFloat(sum.Q*Number.parseFloat(sum.offRate))
       cart_value+=sum1
-      let MRP1=Number.parseFloat(sum.Q*Number.parseFloat(sum.MRP))
+      let MRP1=Number.parseFloat(sum.Q*Number.parseFloat(sum.mrp))
       MRP_total+=MRP1
      })
      document.querySelector("#total>span").textContent=`₹ ${(cart_value).toFixed(2)}`
@@ -225,4 +226,20 @@ function displaycart(){
     document.querySelector("#cart").append(delivery,cart_empty)
 
     }
+
+
+
+    // display name
+
+    
+   var user_number = localStorage.getItem("login-data")
+  var userArr =JSON.parse(localStorage.getItem("user-data"))
+
+  userArr.map(function(ele,index){
+  // console.log(ele)
+  if(ele.ph == user_number )
+  document.getElementById("name-display").textContent = ele.name ;
+  })
+
+   
 }

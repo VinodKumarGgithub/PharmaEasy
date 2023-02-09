@@ -1,0 +1,117 @@
+/* main */
+#prod-main{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    margin: 50px auto;
+}
+#prod-main>div{
+    padding: 30px;
+}
+#filter>div{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+#prod-main h2{
+    font-family: "Open Snas", sans-serif;
+    font-weight: 600;
+    /* font-size: 16px; */
+    font-size: 26px;
+    line-height: 32.5px;
+    color: rgb(79,88,94);
+}
+#prod-main h3{
+    font-family: "Open Snas", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20pxpx;
+    color: rgb(79,88,94);
+}
+#prod-main{
+    font-family: "Open Snas", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(79,88,94);
+}
+
+#prod-main #filter-price{
+    margin-top: 10px;
+    width: 100%;
+    padding: 8% 5%;
+    border-radius: 8px;
+    font-family: "Open Snas", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+#filter-price>option:hover{
+    background-color: #10847e;
+    border: none;
+    border-radius: 8px;
+
+}
+
+#products-cat>div,#products-price>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#display-product{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:15px;
+}
+
+#display-product>a>div{
+    padding: 20px;
+    border-radius: 8px;
+    font-family: "Open Snas", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(79, 88, 94);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#display-product>a>div:hover{
+  outline: 1px solid #10847e;
+}
+
+#display-product>a>div img{
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+}
+
+#display-product>a>div p>span:last-child{
+    font-size: 14px;
+    font-weight : 600;
+    color: rgb(244, 119, 121)
+}
+#display-product>a>div p>span:first-child{
+    text-decoration: line-through;
+}
+
+#display-product>a>div p:nth-child(2){
+    margin-top:-7px;
+    margin-bottom: 0px;
+    font-family: "Open Snas", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: rgb(136, 151, 162);
+}
+#display-product>a>div>div>div>span{
+    font-family: "Open Snas", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(79, 88, 94);
+}
+@media screen and (max-width:1000px){
+    
+}

@@ -16,7 +16,14 @@ function displaydata(){
     document.getElementById("mail").value = user[0].mail
   }
   
+  var user_number = localStorage.getItem("login-data")
+  var userArr =JSON.parse(localStorage.getItem("user-data"))
 
+  userArr.map(function(ele,index){
+  console.log(ele)
+  if(ele.ph == user_number )
+  document.getElementById("name-display").textContent = ele.name ;
+  })
 }
 
 
@@ -41,5 +48,5 @@ function update(){
     }
     })
 
- 
+   
 }
