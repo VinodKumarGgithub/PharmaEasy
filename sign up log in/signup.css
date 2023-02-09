@@ -1,0 +1,124 @@
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #btn{
+        margin: 20px;
+        padding: 10px;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .overlay{
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.692);
+        z-index: -1;
+        opacity: 0;
+        transition: 0s;
+    }
+    form{
+        padding: 18px;
+    }
+    .showoverlay{
+        opacity: 1;
+        z-index: 1;
+    }
+    .login{
+        width: 400px;
+        background-color: aliceblue;
+        height: 100vh;
+        position: absolute; 
+        left: -70%; 
+        z-index: 9;
+        right: 0px;
+        transition: 0s;
+        top: 0px; 
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    #newlog h3{
+        font-size: 20px;
+        color: gray;
+        margin-top:5px ;
+        margin-bottom: 20px;
+    }
+    .showlogin{
+        left: 70.5%;
+    }
+    #newlog{
+        padding: 20px;
+    }
+    .login input{
+        width: 100%;
+        height: 45px;
+        margin-top:15px ;
+        /* border-radius: 10px; */
+        border: none;
+        font-size: 25px;
+        padding-left: 15px;
+        /* border: 0.5px solid grey;    */
+    }
+    .login input:focus{
+        outline: none;
+    }
+    .login input::placeholder{
+        /* padding: 12px; */
+        color: grey;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    form #newlog>div input:last-child{
+        width: 100.5%;
+        background-color: rgb(16,132,126);
+        color: white;
+        /* padding: 10px; */
+        height: 52px;
+        border: none;
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .login  p{
+        /* margin-top: 25px; */
+        margin-bottom: 20px;
+        color: grey;
+        font-size: 14px;
+        }
+    #logo{
+        background-color: rgb(16,132,126);
+        display: flex;
+    }
+    #logo img{
+        
+        width: 50%;
+        padding: 20px;
+    }
+    span{
+        color: rgb(16,132,126);
+    }
+    #cross{
+        color: black;
+        position: absolute;
+        left: -60px;
+        top: 30px;
+        width: 40px;
+        height: 40px;
+        background-color:rgb(16,132,126) ;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        font-size: 50px;
+        cursor: pointer;
+        padding: 10px;
+    }
+   
+   
