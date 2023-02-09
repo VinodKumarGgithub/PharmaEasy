@@ -69,3 +69,22 @@ function onchance(){
     
     
 }
+
+var billData=JSON.parse(localStorage.getItem("bill-list"))
+
+var bill=[
+    {
+    mrp:100,
+    off:20,
+    value:80,
+    final:80
+}
+]
+console.log(billData)
+localStorage.setItem("bill-list",JSON.stringify( bill));
+  billData.map(function(elm){
+document.getElementById("mrp").textContent='₹'+elm.mrp;
+document.getElementById("Discount").textContent='₹'+elm.off;
+document.getElementById("cartValue").textContent='₹'+elm.value;
+document.getElementById("amt").textContent='₹'+elm.final;
+})
