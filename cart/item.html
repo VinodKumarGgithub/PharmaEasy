@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>item's</title>
+    
+    <style>
+        buttom{
+            padding: 17px 40px;
+            border: none;
+            background-color: rgb(11, 73, 73);
+        }
+    </style>
+</head>
+<body>
+    <button>Add</button>
+    <div id="top">
+     <input type="datetime-local">
+    </div>
+    <!-- <form action="">
+        <label for="">opt 1</label>
+        <input type="radio" name="op" value="0" checked onclick="sel()">
+        <label for="">opt 2</label>
+        <input type="radio" name="op" value="1" onclick="sel()">
+        <label for="">opt 3</label>
+        <input type="radio" name="op" value="2" onclick="sel()">
+        <label for="">opt 4</label>
+        <input type="radio" name="op" value="3" onclick="sel()">
+    </form>
+    <button id="rd">submit</button> -->
+</body>
+<script src="./js/cart.js"></script>
+</html>
+<script>
+
+document.querySelector("button").addEventListener("click",add)
+document.querySelector("input").addEventListener("change",sel)
+let radio=document.querySelectorAll("input[name='op']")
+// let val = document.getElementsByClassName("op")
+
+function sel(){
+    //  let radio = document.getElementsByClassName("op")
+// radio.map(function(ele){
+    for(var i=0; i<radio.length; i++){
+       let c = document.querySelector("input[name='op']:checked").value
+        console.log(c)
+    }
+    console.log(radio)
+
+
+}
+
+function add(){
+// let arr =  JSON.parse(localStorage.getItem("cart-list") ) || []
+
+let obj = {
+  
+    name :"Dolo (Paracetamol) 650mg Strip Of 15 Tablets",
+    image_url: "https://cdn01.pharmeasy.in/dam/products/059346/dolo-650mg-strip-of-15-tablets-2-1653986150.jpg" ,
+    company: "By MICRO LABS" ,
+    tab_Q: "15 Tablet(s) in Strip",
+    MRP : " 29.90",
+    s_price: "₹25.41*" ,
+    offer: "15%OFF",
+    Q : 1
+}
+
+//  arr.push(obj);
+
+let medicine = [
+     {
+        name :"Ecosprin 75mg Strip Of 14 Tablets",
+    image_url: "https://cdn01.pharmeasy.in/dam/products/064425/ecosprin-75mg-strip-of-14-tablets-1-1647434835.jpg?dim=320x320&dpr=1&q=100" ,
+    company: "By USV PVT LTD" ,
+    tab_Q: "14 Tablet(s) in Strip",
+    MRP : "5.33",
+    s_price: "₹4.53*" ,
+    offer: "15%OFF",
+    Q : 1
+     },
+     {
+        name :"Livogen Z Captab 15'S",
+    image_url: "https://cdn01.pharmeasy.in/dam/products_otc/I32380/livogen-z-captab-15s-2-1669710431.jpg" ,
+    company: "By EVION store" ,
+    tab_Q: "15 Tablet(s) in Strip",
+    MRP : "87.3",
+    s_price: "₹75.08*" ,
+    offer: "14%OFF",
+    Q : 1
+     },
+     {
+        name :"Evion Forte Capsule 10'S",
+    image_url: "https://cdn01.pharmeasy.in/dam/products_otc/194710/evion-forte-capsule-10s-2-1671740837.jpg?dim=1024x0" ,
+    company: "By EVION store" ,
+    tab_Q: "10 Tablet(s) in Strip",
+    MRP : "198.3",
+    s_price: "₹176.49*" ,
+    offer: "11%OFF",
+    Q : 1
+     },
+     {
+        name :"Pharmeasy Biotin ",
+    image_url: "https://cdn01.pharmeasy.in/dam/products_otc/D18575/pharmeasy-biotin-bottle-pack-of-60-10-1672061054.jpg?dim=700x0&dpr=1&q=100" ,
+    company: "By Pharmasy Store" ,
+    tab_Q: "Bottle- Pack Of 60",
+    MRP : "699",
+    s_price: "₹384.45*" ,
+    offer: "45%OFF",
+    Q : 1
+     },
+     {
+        name :"Pharmeasy Multivitamin Multimineral - Immunity Booster - Complete Nutrition ",
+    image_url: "https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-2-1675775391.jpg?dim=700x0&dpr=1&q=100" ,
+    company: "By Pharmasy Store" ,
+    tab_Q: "Bottle Of 60",
+    MRP : "699",
+    s_price: "₹419.4*" ,
+    offer: "40%OFF",
+    Q : 1
+     },
+     {
+        name :"Oziva Plant Based Biotin 10000mcg + Hair Vitamins 30 Capsules",
+    image_url: "https://cdn01.pharmeasy.in/dam/products_otc/V36238/oziva-plant-based-biotin-10000mcg-hair-vitamins-30-capsules-2-1671744829.jpg?dim=700x0&dpr=1&q=100" ,
+    company: "By Ozino store" ,
+    tab_Q: "30 Capsules",
+    MRP : "1598",
+    s_price: "₹1358.3*" ,
+    offer: "15%OFF",
+    Q : 1
+     },
+     {
+        name :"Plix Omega 3 Multivitamin 30 Capsules Pack Of 1",
+    image_url: "https://cdn01.pharmeasy.in/dam/products_otc/H59739/plix-omega-3-multivitamin-30-capsules-pack-of-1-2-1671743837.jpg?dim=700x0&dpr=1&q=100" ,
+    company: "By PLIX Store" ,
+    tab_Q: "30 Capsules Pack Of 1",
+    MRP : "650",
+    s_price: "₹552.5*" ,
+    offer: "15%OFF",
+    Q : 1
+     },
+     {
+        name :"Healthvit High Absorption Co-Qvit Coenzyme Q10 - 30mg",
+    image_url: "https://cdn01.pharmeasy.in/dam/products_otc/Y72770/healthvit-high-absorption-co-qvit-coenzyme-q10-30mg-60-capsules-2-1671741994.jpg?dim=700x0&dpr=1&q=100" ,
+    company: "By Healthvit Store" ,
+    tab_Q: " 60 Capsules",
+    MRP : "800",
+    s_price: "₹736*" ,
+    offer: "8%OFF",
+    Q : 1
+     },
+     {
+        name :"Blackmores - Coq10 | Antioxidant Support For Healthy Heart ",
+    image_url: "https://cdn01.pharmeasy.in/dam/products_otc/X84604/blackmores-coq10-antioxidant-support-for-healthy-heart-30-capsules-pack-of-2-2-1671744532.jpg?dim=700x0&dpr=1&q=100" ,
+    company: "By Healthvit Store" ,
+    tab_Q: "30 Capsules (Pack Of 2)",
+    MRP : "3998",
+    s_price: "₹3198.4*" ,
+    offer: "20%OFF",
+    Q : 1
+     },
+    
+]
+
+
+let user = [
+    {
+    name : "vinu",
+    ph : "812543704",
+    mail : "demo@gmail.com"
+},
+{
+    name : "viji",
+    ph : "7108143407",
+    mail : "1demo@gmail.com"
+},
+{
+    name : "kunal",
+    ph : "9108143123",
+    mail : "2demo@gmail.com"
+},
+{
+    name : "vinu",
+    ph : "9108143704",
+    mail : "demo@gmail.com"
+}
+]
+localStorage.setItem("login-data","9108143123")
+localStorage.setItem("user-data",JSON.stringify(user))
+localStorage.setItem("cart-list",JSON.stringify(medicine))
+}
+
+
+</script>
+
+<!-- 
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+     {
+        name :"",
+    image_url: "" ,
+    company: "By " ,
+    tab_Q: "",
+    MRP : "",
+    s_price: "" ,
+    offer: "%OFF",
+    Q : 1
+     },
+ -->
