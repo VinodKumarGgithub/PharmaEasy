@@ -1,4 +1,8 @@
-displaydata()
+ 
+ let user_data = JSON.parse(localStorage.getItem("user-data")) || []
+ console.log(user_data,user_data == "")
+ if(user_data !="")
+  displaydata()
 
 
 
@@ -11,7 +15,7 @@ function displaydata(){
     return ele.ph == login_data
     })
 
-    document.querySelector("#n").value =user[0].name || ""
+    document.querySelector("#n").value =user[0].name 
     document.getElementById("number").value = user[0].ph
     document.getElementById("mail").value = user[0].mail
   }
@@ -22,7 +26,9 @@ function displaydata(){
   userArr.map(function(ele,index){
   console.log(ele)
   if(ele.ph == user_number )
-  document.getElementById("name-display").textContent = ele.name ;
+  document.getElementById("name-display").textContent = ele.name;
+  document.getElementById("name").innerText = ele.name ;
+  // document.getElementById("name-l").textContent = ele.name[0] ;
   })
 }
 
@@ -43,10 +49,23 @@ function update(){
     userr[index].name =  name
     userr[index].mail =  mail
     localStorage.setItem("user-data",JSON.stringify(userr))
+    displaydata()
     }else{
       console.log("no changes")
     }
     })
+}
+let name = document.querySelector("#n").value 
+let mail = document.getElementById("mail").value
+console.log(name,mail)
+document.querySelector("form").addEventListener("submit",update)
+var userr = JSON.parse(localStorage.getItem("user-data")) || []
+if(userr ==""){
+  let name = document.querySelector("#n").value 
+  let mail = document.getElementById("mail").value
+  console.log(name,mail)
 
-   
+
+}else{
+  console.log(userr)
 }
