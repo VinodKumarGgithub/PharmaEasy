@@ -369,3 +369,29 @@ span{
     background-color:rgb(16,132,126);
   }
 
+
+  form #newlog .form-label{
+    position: absolute;
+    top: 17.8rem;
+    left: 3.5rem;
+    cursor: text;
+    font-size: 18px;
+    transition: top 200ms ease-in,left 200ms ease-in,font-size 200ms ease-in;
+}
+form #newlog  .text-box:focus ~ .form-label
+{
+   top:16.5rem;
+   left: 3.5rem;
+   font-size: 15px;
+   background-color: rgba(250, 250, 250, 0.89);
+   color: rgb(16,132,126);
+}
+form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label{
+    top:16.5rem;
+    left: 3.5rem;
+    font-size: 15px;
+    background-color: rgba(250, 250, 250, 0.89);
+    color: rgb(16,132,126);
+}
+
+
