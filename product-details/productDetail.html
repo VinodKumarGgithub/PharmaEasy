@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar</title>
+    <title>Product Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    <link rel="stylesheet" href="./css/navbar.css">
    <link rel="stylesheet" href="./css/footr.css">
+   <link rel="stylesheet" href="./css/productDetails.css">
+<!-- icon link -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+/>
+
+<!-- bootstrap link -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous"
+/>
 </head>
 <body>
     <div id="navbar">
@@ -16,10 +30,8 @@
             <a href=""><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="pharmeasy"></a>
             <p id="logo-line">|</p>
            <div>
-            <label for="" id="left-label"><img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=32x0" alt="thunder"> Express Delivery to</label>
-            <select name="" id="pincode">
-                <option value="">Select pincode</option>
-            </select>
+            <p id="left-label"><img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=32x0" alt="thunder"> Express Delivery to</p>
+            <button id="pincode">Select pincode <img src="./navbar icons/downarrow.svg" alt=""></button>
         </div>
         </div>
 
@@ -36,7 +48,7 @@
         <div>
         <p>Medicine</p>
         <p>Lab Tests</p>
-        <select name="" id="">
+        <select name="" id="navbar_select">
             <option value="">Healthcare</option>
         </select>
 
@@ -47,6 +59,67 @@
         <p>Value Store</p>
     </div>
     </div>     
+    
+    <div id="detailsBox" class="d-lg-flex align-content-center" >
+        <!-- product detail -->
+       <div class="d-lg-flex">
+            <!-- image -->
+            <div >
+                <img id="prdct_img"src="" alt="product">
+                
+            </div>
+            <!-- details -->
+            <div>
+                <div> <h1 id="heading"></h1>
+                </div>
+                
+                <div>Visit BD ULTRA FINE Store</div>
+                <div class="d-lg-flex align-items-center justify-content-between">
+                    <div class="d-flex">
+                        <!-- off rate -->
+                    <div id="offRate"></div>
+                    <!-- Mrp -->
+                    <div id="mrp" class="text-decoration-line-through"></div>
+                    <!-- offer -->
+                    <div id="offer"></div>
+                    </div>
+                    
+                    <div><button id="addToCart" >Add To Cart</button></div>
+                </div>
+                <div>Inclusive of all taxes</div>
+                <div>Delivery by<span> Today, 7:00 pm - 10:00 pm</span></div>
+
+            </div>
+       </div>
+       <!--view cart -->
+       <div>
+            <div>
+                <p>Please add item(s) to proceed</p>
+                <button id="viewCart" >View Cart ></button>
+            </div>
+            <div>
+                
+                    <div class="d-flex justify-content-between">
+                        <div><p class="text-secondary">Offers Just for you</p></div>
+                        <div><p class="text-success">View All</p></div>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div><img src="https://cms-contents.pharmeasy.in/offer/5d08479cec7-CRED.jpg" alt=""></div>
+                        <div><p>Get up to Rs.250 cashback Via CRED Pay UPI</p> </div>
+                            <div ><i class="bi bi-chevron-right "></i> </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div><img src="https://cms-contents.pharmeasy.in/offer/561494c10fd-Acc.png" alt=""></div>
+                        <div><p>Get Extra 10% Off upto Rs.200 on Accu Chek Products </p></div>
+                        <div> <i class="bi bi-chevron-right"></i> </div>
+                    </div>
+                
+            </div>
+       </div>
+    </div>
+
+
+
 
     <div id="footer">
         <!-- 1st div -->
@@ -61,7 +134,7 @@
                 <a href="">Sell at PharmEasy</a>
             </div>
             <div>
-                <h2>Our Services</h2>
+                <h3> Our Services</h3>
                 <a href="">Order Medicine</a>
                 <a href="">Healthcare Products</a>
                 <a href="">Lab Tests</a>
@@ -144,4 +217,10 @@
 
 </body>
 </html>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"
+></script>
+<script src="./productDetails.js"></script>
 <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>
