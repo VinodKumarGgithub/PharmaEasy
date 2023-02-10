@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.overlay{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.692);
+    z-index: -1;
+    opacity: 0;
+    transition: 0s;
+}
+form{
+    padding: 18px;
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.login{
+    width: 400px;
+    background-color: aliceblue;
+    height: 100vh;
+    position: absolute; 
+    left: -70.4%; 
+    z-index: 9;
+    right: 0px;
+    transition: 0.2s;
+    top: 0px; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: fixed;
+}
+.showlogin{
+    left: 70.5%;
+}
+#newlog{
+    padding: 20px;
+    margin-top: -60px;
+    margin: 1px;
+}
+.login input{
+    width: 100%;
+    height: 45px;
+    margin-top:8px ;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid grey;
+    font-size: 15px;
+    padding-left: 12px;
+}
+.login input:focus{
+    outline:1px solid rgb(16,132,126) ;
+}
+.login input::placeholder{
+    /* padding: 12px; */
+    color: grey;
+    font-weight: 200;
+    font-size: 15px;
+}
+#center{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+form #newlog #butun input{
+    width: 100.5%;
+    background-color:grey;
+    color: white;
+    padding: 10px;
+    height: 52px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: px;
+    text-align: center;
+}
+form #newlog #butun input:hover{
+    background-color: rgb(16,132,126);
+    scale: 1.05;
+}
+
+.login  p{
+    /* margin-top: 25px; */
+    margin-bottom: 20px;
+    color: grey;
+    font-size: 14px;
+    }
+#logo{
+    background-color: rgb(240,248,255);
+    margin: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 100%;
+    margin: auto;
+    height: 90px;
+
+}
+#logo h3{
+    position: absolute;
+    left: 80px;
+    top: 35px;
+    font-size: 25px;
+}
+span{
+    color: rgb(16,132,126);
+    font-size: px;
+}
+#third #airo{
+    font-size: 26px;
+    margin-left: 10px;
+}
+#cross{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 10px;
+    background-color:rgb(240,248,255);
+    color: black;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    /* padding: 10px; */
+}
+
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -35px;
+}
+.checkbox input{
+    left: 0px;
+    width: 15px;
+}
+.checkbox p{
+    margin-top: 28px;
+    margin-right: 90px;
+    font-size: 15px;
+}
+#butun {
+    margin-top: -25px;
+    width: 340px;
+}
+#logo>div{
+    margin-top: 20px;
+    border: 0.1px solid grey;
+    border-radius:10px;
+    padding: 10px;
+
+}
+/* #newlog >div label{
+    position: absolute;
+    left: 50px;
+    background-color: rgba(234, 242, 250, 0.664);
+} */
+#newlog >div:nth-child(3) input{
+  width: 40%;
+  border-radius: 10px;
+}
+#addrestype > div button{
+    /* display: flex; */
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    border: 1px solid grey;
+    margin: 8px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+#addrestype > div button:hover{
+    background-color: rgb(242,255,248);
+    outline: 1px solid rgb(16,132,126);
+}
+#newlog >div:nth-child(2) {
+margin-top:15px ;
+}
+#newlog >div:nth-child(2) ,p{
+    margin-top: 6px;
+}
+
+form #newlog .form-label{
+    position: absolute;
+    top: 9.4rem;
+    left: 3.5rem;
+    cursor: text;
+    font-size: 18px;
+    transition: top 200ms ease-in,left 200ms ease-in,font-size 200ms ease-in;
+}
+form #newlog  .text-box:focus ~ .form-label
+{
+   top:8rem;
+   left: 3.5rem;
+   font-size: 15px;
+   background-color: rgba(250, 250, 250, 0.911);
+}
+form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label{
+    top:8rem;
+   left: 3.5rem;
+   font-size: 15px;
+   background-color: rgba(250, 250, 250, 0.911);
+}
+
+form #newlog .form-label2{
+    position: absolute;
+    top: 13.3rem;
+    left: 3.5rem;
+    cursor: text;
+    font-size: 18px;
+    transition: top 200ms ease-in,left 200ms ease-in,font-size 200ms ease-in;
+}
+form #newlog  .text-box:focus ~ .form-label2{
+   top:11.9rem;
+   left: 3.5rem;
+   font-size: 15px;
+   background-color: rgba(250, 250, 250, 0.904);
+}
+form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label2{
+    top:11.9rem;
+   left: 3.5rem;
+   font-size: 15px;
+   background-color: rgba(250, 250, 250, 0.904);
+}
+
+form #newlog .form-label3{
+    position: absolute;
+    top: 19.2rem;
+    left: 3.5rem;
+    cursor: text;
+    font-size: 18px;
+    transition: top 200ms ease-in,left 200ms ease-in,font-size 200ms ease-in;
+}
+form #newlog  .text-box:focus ~ .form-label3{
+   top:17.9rem;
+   left: 3.5rem;
+   font-size: 15px;
+   background-color: rgba(250, 250, 250, 0.904);
+}
+
+form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label3{
+    top:17.9rem;
+   left: 3.5rem;
+   font-size: 15px;
+   background-color: rgba(250, 250, 250, 0.904);
+}
