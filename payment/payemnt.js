@@ -1,7 +1,7 @@
 function showpopUp(){ 
     document.querySelector(".overlay").classList.add("showoverlay");
     document.querySelector(".login").classList.add("showlogin");
-    var data="Card-Number :- 12345678912345678, Date :- 12/24 , CVVnumber :- 123,  Name :- kamal verma";
+    var data="Card-Number :- 1234567891234567, Date :- 12/24 , CVVnumber :- 123,  Name :- kamal verma";
     alert(data)
 }
 
@@ -15,7 +15,7 @@ document.querySelector("form").addEventListener("submit",onchance)
 function onchance(){
     event.preventDefault();
     var num=1234567891234567,
-    date=2412,
+    date=1224,
     cvv=123,
     name="kamalverma";
 
@@ -33,7 +33,7 @@ function onchance(){
         document.getElementById("nums").textContent="";
        }
 
-       if(date!=1224){
+       if(date!="12/24"){
         document.getElementById("dates").textContent="Invalid date!!";
         var n=document.getElementById("dates");
         n.style.color="red"
@@ -54,18 +54,34 @@ function onchance(){
         n.style.marginTop="2px"
        }
 
-       if(number.length==16&&date==1224&&cvv==123&&name=="kamal verma"){
-        alert("Payment successfully Your Item has been deleverd soon!")
+       if(number.length==16&&date=="12/24"&&cvv==123&&name=="kamal verma"){
+        alert("Payment successfully Your Item has been deleverd soon!")   
+         
        }else{
-        alert("Invalid detail")
+        alert(" Invalid Card Detail !")
        }
 
        document.getElementById("number").value="";
         document.getElementById("date").value="";
        document.getElementById("cvv").value="";
-       document.getElementById("name").value="";
-
-    // console.log(obj) 
-    
-    
+       document.getElementById("name").value="";  
 }
+
+var billData=JSON.parse(localStorage.getItem("bill-list"))
+
+var bill=[
+    {
+    mrp:100,
+    off:20,
+    value:80,
+    final:80
+}
+]
+console.log(billData)
+localStorage.setItem("bill-list",JSON.stringify( bill));
+  billData.map(function(elm){
+document.getElementById("mrp").textContent='₹'+elm.mrp;
+document.getElementById("Discount").textContent='₹'+elm.off;
+document.getElementById("cartValue").textContent='₹'+elm.value;
+document.getElementById("amt").textContent='₹'+elm.final;
+})

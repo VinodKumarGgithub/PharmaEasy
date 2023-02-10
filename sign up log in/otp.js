@@ -1,13 +1,10 @@
-window.onload(alert("OTP:-1234"));
-
+alert("OTP:-1234")
 var inputs=document.querySelectorAll("input");
 var button=document.querySelector("button");
-// console.log(inputs,button)
 
 function closepopUp(){
     document.querySelector(".overlay").classList.remove("overlay");
     document.querySelector(".login").classList.add("showlogin");
-    // console.log("hii")
 }
 
 function showpopUp(){
@@ -16,42 +13,36 @@ function showpopUp(){
 
 function closepopup(){
     document.querySelector(".success").classList.remove("showSuccess");
-//    console.log("hii")
 var otp=JSON.parse(localStorage.getItem("otp"));
 var Userotp=JSON.parse(localStorage.getItem("userOTP"));
 console.log(otp,Userotp)
     if(otp==Userotp){
-        window.location.href = 'homepage.html';
+        window.location.assign('/PharmaEasy/Index-page/index.html');
     }
-    // else{
-    //     alert("invalid")
-    // }
-    // document.querySelector(".login").classList.add("showlogin");
-    // console.log("hii")
 }
 
 inputs.forEach((input,index1)=>{
     input.addEventListener("keyup",(e)=>{
 
-        var currentInput =input,
-        nextInput=input.nextElementSibling,
-        prevInput=input.previousElementSibling;
+        var currentInput = input,
+        nextInput = input.nextElementSibling,
+        prevInput = input.previousElementSibling;
 
         if(currentInput.value.length >1){
-            currentInput.value=""; 
+            currentInput.value = ""; 
             return;
         }
 
-        if(nextInput && nextInput.hasAttribute("disabled")&& currentInput.value!==""){
+        if(nextInput && nextInput.hasAttribute("disabled") && currentInput.value !== ""){
             nextInput.removeAttribute("disabled");
             nextInput.focus();
         }
 
         if(e.key === "Backspace"){
             inputs.forEach((input,index2)=>{
-                if(index1<=index2&&prevInput){
+                if(index1 <= index2 && prevInput){
                     input.setAttribute("disabled",true);
-                    currentInput.value="";
+                    currentInput.value = "";
                     prevInput.focus();
                 }
             })

@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="signup.css">
-   
-    <title>Sign up</title>
+    <title>Signup</title>
 </head>
 <body>
-    <button id="btn" onclick=" showpopUp()" >Log In</button>
+    <div id="overlay"></div>
     <div class="overlay"></div>
     <div class="login">
        
@@ -24,12 +22,20 @@
            
             <div id="newlog">
                 <div>
-                    <h3>Quick Login / Register</h3>
-                    <input type="number" id="number"  placeholder="Enter your mobile number.."/>
-                    <hr>
-                    <input id="button" type="submit" value="Send OTP" >
+                    <h3>Sign UP</h3>
                 </div>
-                <!-- <button onclick = "clickBtn()">Send OTP</button> -->
+                <div>
+                    <input type="name" placeholder="Name*" id="name"  required/>            
+                </div>
+                <div>
+                    <input type="email" placeholder="Email*" id="email" required/>     
+                </div>
+                <div>
+                    <input type="number" placeholder="Mobile No*" id="number"/>             
+                </div>
+                <div>
+                    <input type="submit" />
+                </div>
                 <div>
                     <p id="ptag"></p>
                     <p>By clicking continue, you agree with our <span> Privacy Policy</span></p>
@@ -39,8 +45,6 @@
             
         </form>
     </div>
-    
-    <script src="signup.js"></script>
+    <script src="Sign_up_page.js"></script>
 </body>
 </html>
-

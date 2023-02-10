@@ -149,30 +149,30 @@
             <div id="box">
                 <div>
                     <p>Total MRP</p>
-                    <span>₹2300</span>
+                    <span id="mrp">00</span>
                 </div>
                 <div>
                     <p>Discount on MRP</p>
-                    <span>-₹230</span>
+                    <span id="Discount">00</span>
                 </div>
                 <hr>
                 <div>
                     <p>Cart Value</p>
-                    <span>₹2070.00</span>
+                    <span id="cartValue">00</span>
                 </div>
                 <div>
                     <p>Delivery charges</p>
-                    <span>Free</span>
+                    <span id="charges">Free</span>
                 </div>
                 <hr>
                 <div>
                     <p>Amount to be paid</p>
-                    <span>₹2070.00</span>
+                    <span id="amt">00</span>
                 </div>
                 <hr>
             </div>
             <div>
-                <h6>₹ Total saving in this ₹379</h6>
+                <h6>Total saving in this ₹379</h6>
             </div>
             
 
@@ -199,19 +199,22 @@
            
             <div id="newlog">
                 <div>
-                    <label for="">Card Number</label>
-                    <input type="number" id="number"  placeholder="1234-5678-5896-2587"/>
+                    
+                    <input type="number" id="number"  placeholder=" " class="text-box" required/>
+                    <label class="form-label">
+                        Card Number*
+                    </label>
                     <p id="nums"></p>
 
                     <div id="center">
                         <div>
                             <label for="">Valid Through</label>
-                            <input type="text" id="date" placeholder="MM/YY">
+                            <input type="text" id="date" placeholder="MM/YY" required>
                             <P id="dates"></P>
                             </div>
                             <div>
                                 <label for="">CVV</label>
-                                <input type="text" id="cvv" placeholder="123">
+                                <input type="text" id="cvv" placeholder="123" required>
                                 <P id="cvvnum"></P>
                             </div>
                     </div>
@@ -219,7 +222,7 @@
 
                     <div>
                         <label for="">Name on Card</label>
-                        <input type="text" id="name" placeholder="e.g Ravi Kumar">
+                        <input type="text" id="name" placeholder="e.g Ravi Kumar" required>
                         <p id="names"></p>
                     </div>
 
@@ -245,14 +248,6 @@
         </form>
     </div>
 
-
-    <div class="success">
-        <div>
-            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="">
-           <h1 id="htag"> Signup SuccessFully!</h1> 
-           <span id ="danger">&times;</span>
-        </div>
-    </div>
 
     <script src="https://kit.fontawesome.com/3e0c0ed060.js" crossorigin="anonymous"></script>
 </body>

@@ -9,6 +9,12 @@
    <link rel="stylesheet" href="./css/navbar.css">
    <link rel="stylesheet" href="./css/footr.css">
    <link rel="stylesheet" href="./css/bst.css">
+   <link rel="stylesheet" href="/PharmaEasy/sign up log in/signup.css">
+   
+
+   <!-- <link rel="stylesheet" href="/PharmaEasy/sign up log in/otp.js"> -->
+  
+ 
     <!-- icon link -->
     <link
       rel="stylesheet"
@@ -44,7 +50,10 @@
             
             <a href="https://pey.onelink.me/3krD/2bwqxjrj"><div><button><img src="./navbar icons/mobile1.svg" alt="" ><span>Download App</span> </button></div></a>
             
+
+            <a href="" id="under"><p><img src="./navbar icons/profile.svg" alt=""><span onclick="showpopUp()"  id="name-display">Hello, log in</span> </p></a> 
             <a href="" id="under"><p><img src="./navbar icons/profile.svg" alt=""><span id="name-display">Hello, log in</span> </p></a> 
+
             <a href="" id="under"><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
             <a href="" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span>Cart</span> </p></a>
         </div>
@@ -687,8 +696,45 @@
     <script src="swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="index.js"></script>
+
+    <div class="overlay"></div>
+    <div class="login">
+       
+        <div id="logo">
+            <span id ="cross" onclick="closepopUp()" >&times;</span>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg?dim=256x0" alt="">
+        </div>
+        <!-- <a href="./OTP.html">clickkkkk</a> -->
+        <form action="">
+           
+            <div>
+                <div>
+                    <h3>Quick Login / Register</h3>
+                    <input type="number" id="number"  placeholder="Enter your mobile number.."/>
+                    <!-- <hr> -->
+                  <input id="button"  type="submit" value="Send OTP" />
+                </div>
+                <!-- <button onclick = "clickBtn()">Send OTP</button> -->
+                <div>
+                    <p id="ptag"></p>
+                    <p>By clicking continue, you agree with our <span> Privacy Policy</span></p>
+
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+
 </body>
 </html>
+<!-- <script src="/PharmaEasy/sign up log in/otp.js"></script> -->
+<script src="/PharmaEasy/sign up log in/signup.js"></script>
+
+</body>
+</html>
+
 
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
