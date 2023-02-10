@@ -5,7 +5,9 @@
     display: flex;
     margin: 50px auto;
 }
-#prod-main>div{
+#prod-main>div:nth-child(2){
+    margin:0px 30px;
+    width: 0%;
     padding: 30px;
 }
 #filter>div{
@@ -61,7 +63,7 @@
 
 
 #display-product{
-    width: 70%;
+    /* width: 20%; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:20px;
@@ -90,7 +92,7 @@
    
 }
 #display-product>a>div{
-    height: 260px;
+    height: 240px;
    
 }
 

@@ -37,5 +37,5 @@ function addto_Cart(){
     cartArr.push(item[0])
     localStorage.setItem("cart-list",JSON.stringify(cartArr))
     console.log(item[0])
-    alert("Added successfuly")
+    alert("Added successfully")
 }

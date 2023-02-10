@@ -23,10 +23,11 @@ function displaydata(){
   var userArr =JSON.parse(localStorage.getItem("user-data"))
 
   userArr.map(function(ele,index){
-  console.log(ele)
-  if(ele.ph == user_number )
+  
+  if(ele.ph == user_number ){
   document.getElementById("name-display").textContent = ele.name;
-  document.getElementById("name").innerText = ele.name ;
+  let name = document.getElementById("name").textContent = ele.name ;
+  }
   // document.getElementById("name-l").textContent = ele.name[0] ;
   })
 }
@@ -56,7 +57,6 @@ function update(){
 }
 let name = document.querySelector("#n").value 
 let mail = document.getElementById("mail").value
-console.log(name,mail)
 document.querySelector("form").addEventListener("submit",update)
 var userr = JSON.parse(localStorage.getItem("user-data")) || []
 if(userr ==""){
@@ -72,6 +72,20 @@ if(userr ==""){
 document.getElementById("log-out").addEventListener("click",logOut)
 
 function logOut(){
+  let ph_number = JSON.parse(localStorage.getItem("login-data")) || []
+  let search = JSON.parse(localStorage.getItem("user-data")) || []
+  let cart_data = JSON.parse(localStorage.getItem("cart-list")) || []
+  let userr = search.map(function(ele){
+   if( ph_number == ele.ph){
+    
+    ele.cart = cart_data
+    search.push(ele.cart)
+   }
+  } )
+  
+  localStorage.setItem("user-data",JSON.stringify(search))
+  localStorage.setItem("cart-list","")
   localStorage.setItem("login-data","")
-  window.location.assign("")
+  alert("Logged Out Successfully")
+ document.getElementById("log-out").addEventListener("href","/PharmaEasy/Index-page/index.html")
 }

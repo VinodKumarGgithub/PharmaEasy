@@ -294,7 +294,7 @@ var dealsOfTheDay=[
         "company": "By Micro Labs",
     },
     {
-        "image":"https://cdn01.pharmeasy.in/dam/products_otc/I09432/neurobion-forte-tablet-30s-1-1669655036.jpg?dim=1440x0",
+        "image":"https://th.bing.com/th/id/OIP.yndvZvT2F0_AGI_B1SlLVAHaHa?w=214&h=214&c=7&r=0&o=5&dpr=1.4&pid=1.7",
         "title":"Neurobion Forte Tablet 30'S",
         "mrp":"38.10",
         "offRate":"36.58",
@@ -304,7 +304,7 @@ var dealsOfTheDay=[
         "company": "By Micro Labs",
     },
     {
-        "image":"https://cdn01.pharmeasy.in/dam/products_otc/W65773/nestle-ceregrow-growing-up-multigrain-cereal-with-milk-fruits-300g-2-1657181899.jpg?dim=1440x0",
+        "image":"https://th.bing.com/th/id/OIP.Z-odUeLf2QBXg2750T2mLwAAAA?w=136&h=169&c=7&r=0&o=5&dpr=1.4&pid=1.7",
         "title":"Nestle Ceregrow Growing Up Multigrain Cereal With Milk & Fruits - 300g",
         "mrp":"316.00",
         "offRate":"306.52",
@@ -314,7 +314,7 @@ var dealsOfTheDay=[
         "company": "By Micro Labs",
     },
     {
-        "image":"https://cdn01.pharmeasy.in/dam/products_otc/I40513/softovac-sf-constipation-powder-bottle-of-250-g-2-1669710492.jpg?dim=1440x0",
+        "image":"https://images-na.ssl-images-amazon.com/images/I/710lenIlb0L._AC_UL160_SR160,160_.jpg",
         "title":"Softovac Sf Constipation Powder Bottle Of 250 G",
         "mrp":"460.00",
         "offRate":"331.20",
@@ -324,7 +324,7 @@ var dealsOfTheDay=[
         "company": "By Micro Labs",
     },
     {
-        "image":"https://cdn01.pharmeasy.in/dam/products_otc/F12885/nestle-nangrow-nutritious-milk-drink-for-growing-children-creamy-vanilla-400g-2-1657181996.jpg?dim=1280x0",
+        "image":"https://th.bing.com/th/id/OIP.kzn-BJ0WGwHkBAGnEzLZNgAAAA?w=149&h=150&c=7&r=0&o=5&dpr=1.4&pid=1.7",
         "title":"Nestle Nangrow Nutritious Milk Drink For Growing Children Creamy Vanilla 400g",
         "mrp":"585.00",
         "offRate":"567.45",
