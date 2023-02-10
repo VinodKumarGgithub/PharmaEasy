@@ -87,19 +87,19 @@ span{
     color: rgb(16,132,126);
 }
 #cross{
-    color: black;
-    position: absolute;
-    left: -60px;
-    top: 30px;
-    width: 40px;
-    height: 40px;
-    background-color:rgb(16,132,126) ;
-    color: white;
-    text-align: center;
-    line-height: 40px;
-    font-size: 50px;
-    cursor: pointer;
-    padding: 10px;
+  color: black;
+  position: absolute;
+  left: -62px;
+  top: 30px;
+  width: 40px;
+  height: 40px;
+  background-color:rgb(16,132,126) ;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 12px;
 }
 h3,#number{
     color: grey;

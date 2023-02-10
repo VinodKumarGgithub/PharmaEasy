@@ -1,5 +1,4 @@
-
-
+alert("OTP:-1234")
 var inputs=document.querySelectorAll("input");
 var button=document.querySelector("button");
 
@@ -18,7 +17,7 @@ var otp=JSON.parse(localStorage.getItem("otp"));
 var Userotp=JSON.parse(localStorage.getItem("userOTP"));
 console.log(otp,Userotp)
     if(otp==Userotp){
-        window.location.href = 'homepage.html';
+        window.location.assign('/PharmaEasy/Index-page/index.html');
     }
 }
 
