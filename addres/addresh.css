@@ -196,12 +196,14 @@ form #newlog  .text-box:focus ~ .form-label
    left: 3.5rem;
    font-size: 15px;
    background-color: rgba(250, 250, 250, 0.911);
+   color: rgb(16,132,126);
 }
 form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label{
     top:8rem;
    left: 3.5rem;
    font-size: 15px;
    background-color: rgba(250, 250, 250, 0.911);
+   color: rgb(16,132,126);
 }
 
 form #newlog .form-label2{
@@ -217,12 +219,14 @@ form #newlog  .text-box:focus ~ .form-label2{
    left: 3.5rem;
    font-size: 15px;
    background-color: rgba(250, 250, 250, 0.904);
+   color: rgb(16,132,126);
 }
 form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label2{
     top:11.9rem;
    left: 3.5rem;
    font-size: 15px;
    background-color: rgba(250, 250, 250, 0.904);
+   color: rgb(16,132,126);
 }
 
 form #newlog .form-label3{
@@ -238,6 +242,7 @@ form #newlog  .text-box:focus ~ .form-label3{
    left: 3.5rem;
    font-size: 15px;
    background-color: rgba(250, 250, 250, 0.904);
+   color: rgb(16,132,126);
 }
 
 form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label3{
@@ -245,4 +250,51 @@ form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label
    left: 3.5rem;
    font-size: 15px;
    background-color: rgba(250, 250, 250, 0.904);
+   color: rgb(16,132,126);
 }
+
+.success{
+    width: 400px;
+    height: 320px;
+    position: absolute;
+    left: -50%;
+    right: 50%;
+    transform: translate(-50%,50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px black;
+    background-color:rgba(76, 115, 138, 0.24);
+    z-index: 9;
+  }
+  .showSuccess{
+    left: 50%;
+  }
+  #danger{
+    width: 60px;
+    height: 60px;
+    color: white;
+    /* padding: 50px; */
+    font-size: 50px;
+    position: absolute;
+    left: 42%;
+    top: 75%;
+    text-align: center;
+    background-color: grey;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #danger:hover{
+    background-color: black;
+  }
+  .success div h1{
+    color: white;
+    display: flex;
+    text-align: center;
+    padding: 55px;
+    margin-top: -50px;
+    /* width: 100%; */
+    /* margin: auto; */
+    
+  } 
+  .success div img{
+    padding: 20px;
+  }

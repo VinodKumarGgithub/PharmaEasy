@@ -17,6 +17,7 @@ function addreshData(){
     document.getElementById("addres").value=""
     document.getElementById("strret").value=""
 }
+document.getElementById("danger").addEventListener("click",closepopUp)
 
 function showpopUp(){ 
     document.querySelector(".overlay").classList.add("showoverlay");
@@ -26,4 +27,33 @@ function showpopUp(){
 function closepopUp(){
     document.querySelector(".overlay").classList.remove("showoverlay");
     document.querySelector(".login").classList.remove("showlogin");
+}
+
+function showpopup(){
+    document.querySelector(".success").classList.add("showSuccess");
+}
+
+function closepopup(){
+    document.querySelector(".success").classList.remove("showSuccess");
+var otp=JSON.parse(localStorage.getItem("otp"));
+var Userotp=JSON.parse(localStorage.getItem("userOTP"));
+console.log(otp,Userotp)
+    if(otp==Userotp){
+        window.location.href = 'homepage.html';
+    }
+}
+
+document.getElementById("buttons").addEventListener("click",closes);
+function closes(){
+    var name=document.getElementById("name").value;
+    var number=document.getElementById("number").value;
+    var pin=document.getElementById("pinCode").value;
+    var addres=document.getElementById("addres").value;
+    var street=document.getElementById("strret").value;
+
+    if(name==""&&number==""&&pin==""&&addres==""&&street==""){
+        alert("Plase fill all the filed !")
+    }else{
+        closes(showpopup())
+    }
 }
