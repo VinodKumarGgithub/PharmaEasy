@@ -20,7 +20,7 @@ function displaycart(){
 
     let div11 = document.createElement("div")
     let img = document.createElement("img")
-    img.setAttribute("src",`${ele.image_url}` )
+    img.setAttribute("src",`${ele.image}` )
     img.setAttribute("id","img")
     
     // // descripton
@@ -48,6 +48,7 @@ function displaycart(){
     let del_logo = document.createElement("img")
        del_logo.setAttribute("src","https://assets.pharmeasy.in/web-assets/images/icDelete.svg")
        del_logo.addEventListener("click",del)
+       del_logo.setAttribute("id","remove_box")
     let Qty = document.createElement("select")
     let opt = document.createElement("option")
     opt.textContent="Qty 1"; opt.value=1;
@@ -203,13 +204,15 @@ function displaycart(){
     rdiv.append(rdivin1,rdivin2,rdivin3)
     
   
-   
-    var obj = {
+   let billArr = []
+    var obj = [{
       mrp : MRP_total.toFixed(2),
       off : (MRP_total-cart_value).toFixed(2),
       value : cart_value.toFixed(2),
       final : cart_value.toFixed(2)
     }
+  ]
+  billArr.push(obj)
     localStorage.setItem("bill-list",JSON.stringify(obj))
 
   
@@ -242,4 +245,10 @@ function displaycart(){
   })
 
    
+
+
+if(localStorage.getItem("login-data")==""){
+  console.log("login-empty")
+  
+}
 }

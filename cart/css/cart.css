@@ -42,6 +42,7 @@
     width: 16px;
     height: 18px;
     margin: 10px;
+    
 }
 #delivery-adress{
     display: flex;
@@ -74,8 +75,12 @@
 }
 #empty-cart img{
     height: 100px;
+    border: 1px solid red;
 }
 
+#remove_box,select{
+    cursor: pointer;
+}
 /* main right */
 
 #cart-main>div:last-child{

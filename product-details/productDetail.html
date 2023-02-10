@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Product Details</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    <link rel="stylesheet" href="./css/navbar.css">
    <link rel="stylesheet" href="./css/footr.css">
-   <link rel="stylesheet" href="./css/cart.css">
-  
+   <link rel="stylesheet" href="./css/productDetails.css">
+<!-- icon link -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+/>
+
+<!-- bootstrap link -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+crossorigin="anonymous"
+/>
 </head>
 <body>
-    <!-- navbar -->
     <div id="navbar">
         <div id="left-nav">
             
@@ -20,25 +31,24 @@
             <p id="logo-line">|</p>
            <div>
             <p id="left-label"><img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=32x0" alt="thunder"> Express Delivery to</p>
-            <button id="pincode">560100 Banglore <img src="./cart icons/downarrow.svg" alt=""></button>
-           
+            <button id="pincode">560100 Banglore <img src="./navbar icons/downarrow.svg" alt=""></button>
         </div>
         </div>
 
         <div id="right-nav">
             
             <a href="https://pey.onelink.me/3krD/2bwqxjrj"><div><button><img src="./navbar icons/mobile1.svg" alt="" ><span>Download App</span> </button></div></a>
-            
-            <a href="/PharmaEasy/profile/profile.html" ><p><img src="./navbar icons/profile.svg" alt=""><span id="name-display">Hello, log in</span> </p></a> 
-            <a href="/PharmaEasy/All products/Products.html" ><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
-            <a href="./cart.html" ><p><img src="./navbar icons/cart.svg" alt=""><span id="cart_count"></span><span>Cart</span> </p></a>
+           
+            <a href="/PharmaEasy/profile/profile.html" id="under"><p><img src="./navbar icons/profile.svg" alt=""><span id="name-display">Hello, user</span> </p></a> 
+            <a href="/PharmaEasy/All products/Products.html" id="under"><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
+            <a href="/PharmaEasy/cart/cart.html" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span>Cart</span> </p></a>
         </div>
     </div>
     <div id="catagory-nav">
         <div>
         <p>Medicine</p>
         <p>Lab Tests</p>
-        <select name="" id="">
+        <select name="" id="navbar_select">
             <option value="">Healthcare</option>
         </select>
 
@@ -48,51 +58,69 @@
         <p>Offers</p>
         <p>Value Store</p>
     </div>
-    </div>    
-     
-       <!-- main -->
-       <div id="pages"></div>
-    <div id="cart-main">
-        <!-- left div -->
-        <div>
-           <div id="item-count">
-              <p >0 Items in your Cart</p>
-             <a href="">
-                <div>
-                  <img src="https://cdn-icons-png.flaticon.com/128/1538/1538598.png" alt="">
-                  <p> Save for later</p> 
-               </div>
-            </a>
-           </div>
-       
-          <div id="cart">
-           <div id="delivery-adress">
-              <a href="">
-               <div>
-                   <img src="./cart icons/location.svg" alt=""> 
-                   <p>Delivery to : <span> Select Pincode</span></p>
-               </div>
-             </a>
-           </div>
-           <div id="empty-cart">
-             <img src="https://assets.pharmeasy.in/web-assets/images/emptyCart.png" alt="">
-             <p>Your Medicine/Healthcare cart is empty!</p>
-           </div>
-         </div>
-        </div>
-       <!-- right div -->
-        <div id="cost_sum">
-            <div>
-            <div id="total">Cart total:  <span>00.00</span></div>
-            <div>
-                <!-- <div><button id="coupon"><a href="" ><img src="https://assets.pharmeasy.in/web-assets/images/cartCoupon.svg" alt="Offer"><span>Apply Coupon</span> </a></button></div> -->
-                <button id="cart-checkout"><a href="./Delivery_slot.html" target="_blank" >Proceed to Checkout</a> </button>
+    </div>     
+    
+    <div id="detailsBox" class="d-lg-flex align-content-center" >
+        <!-- product detail -->
+       <div class="d-lg-flex">
+            <!-- image -->
+            <div >
+                <img id="prdct_img"src="" alt="product">
+                
             </div>
-        </div>
-        </div>
+            <!-- details -->
+            <div>
+                <div> <h1 id="heading"></h1>
+                </div>
+                
+                <div>Visit BD ULTRA FINE Store</div>
+                <div class="d-lg-flex align-items-center justify-content-between">
+                    <div class="d-flex">
+                        <!-- off rate -->
+                    <div id="offRate"></div>
+                    <!-- Mrp -->
+                    <div id="mrp" class="text-decoration-line-through"></div>
+                    <!-- offer -->
+                    <div id="offer"></div>
+                    </div>
+                    
+                    <div><button id="addToCart" >Add To Cart</button></div>
+                </div>
+                <div>Inclusive of all taxes</div>
+                <div>Delivery by<span> Today, 7:00 pm - 10:00 pm</span></div>
+
+            </div>
+       </div>
+       <!--view cart -->
+       <div>
+            <div>
+                <p>Please add item(s) to proceed</p>
+                <button id="viewCart" >View Cart ></button>
+            </div>
+            <div>
+                
+                    <div class="d-flex justify-content-between">
+                        <div><p class="text-secondary">Offers Just for you</p></div>
+                        <div><p class="text-success">View All</p></div>
+                    </div>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <div><img src="https://cms-contents.pharmeasy.in/offer/5d08479cec7-CRED.jpg" alt=""></div>
+                        <div><p>Get up to Rs.250 cashback Via CRED Pay UPI</p> </div>
+                            <div ><i class="bi bi-chevron-right "></i> </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div><img src="https://cms-contents.pharmeasy.in/offer/561494c10fd-Acc.png" alt=""></div>
+                        <div><p>Get Extra 10% Off upto Rs.200 on Accu Chek Products </p></div>
+                        <div> <i class="bi bi-chevron-right"></i> </div>
+                    </div>
+                
+            </div>
+       </div>
     </div>
 
-    <!-- footer -->
+
+
+
     <div id="footer">
         <!-- 1st div -->
      <div> 
@@ -106,7 +134,7 @@
                 <a href="">Sell at PharmEasy</a>
             </div>
             <div>
-                <h3>Our Services</h3>
+                <h3> Our Services</h3>
                 <a href="">Order Medicine</a>
                 <a href="">Healthcare Products</a>
                 <a href="">Lab Tests</a>
@@ -188,9 +216,11 @@
      
 
 </body>
-<script src="./js/cart.js"></script>
-<script src="/PharmaEasy/profile/js/profile.js"></script>
 </html>
-
-
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"
+></script>
+<script src="./productDetails.js"></script>
 <script src="https://kit.fontawesome.com/593dd93f4e.js" crossorigin="anonymous"></script>

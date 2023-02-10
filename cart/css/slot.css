@@ -12,7 +12,12 @@ body{
 #nav-bar>img{
     height: 58px;
 }
-
+i{
+    /* margin-top: 38px; */
+    text-align: center;
+    margin-right: 10px;
+    color: bisque;
+}
 #nav-bar>p>img{
     color: #10847e;
     background-color: #10847e;

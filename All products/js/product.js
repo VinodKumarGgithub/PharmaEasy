@@ -105,7 +105,7 @@ var trendingNearYou=[
         "company": "By Micro Labs",
     },
     {
-        "image":"https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1672136925.jpg?dim=1280x0",
+        "image":"https://th.bing.com/th/id/OIP.ufB4zqNuZ956jg-YVQlP-gHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.4&pid=1.7",
         "title":"Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -helps In Weight Management - 1l",
         "mrp":"399.00",
         "offRate":"207.48",
@@ -250,7 +250,7 @@ var wellnessEssenetialOfWeek=[
         },
     
         {
-        "image":"https://cdn01.pharmeasy.in/dam/products_otc/O31911/everherb-by-pharmeasy-ashwagandha-immunity-booster-capsules-anxiety-stress-relief-bottle-of-60-2-1661760071.jpg?dim=1440x0",
+        "image":"https://th.bing.com/th/id/OIP.ufB4zqNuZ956jg-YVQlP-gHaHa?w=190&h=190&c=7&r=0&o=5&dpr=1.4&pid=1.7",
         "title":"Everherb (By Pharmeasy) Ashwagandha - Immunity Booster Capsules - Anxiety & Stress Relief - Bottle Of 60",
         "mrp":"599.00",
         "offRate":"329.45",
@@ -356,7 +356,7 @@ var dealsOfTheDay=[
 ]
 var Spotlight=[
     {
-        "image":"https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1672136925.jpg?dim=256x0",
+        "image":"https://th.bing.com/th/id/OIP.IetBJ538dDmLdX-sh0V-8QHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7",
         "title":"Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -helps In Weight Management - 1l",
         "mrp":"399.00",
         "offRate":"207.48",
@@ -500,11 +500,11 @@ arr.map(function(ele){
         sellprice.textContent="₹"+ Number.parseFloat(ele.Q*Number.parseFloat(ele.offRate)).toFixed(2) +"*"
         console.log( ele.Q)
         var off = document.createElement("span")
-        off.textContent=ele.offer   ; off.setAttribute("class","off")
+        off.textContent=ele.offer   ;
+         off.setAttribute("class","off")
         let a = document.createElement("a")
-        a.setAttribute("href",``)
-        a.setAttribute("id","product-redi-link")
-        // a.setAttribute("target","_blank")
+        a.addEventListener("click",viewupdate)
+        a.setAttribute("href",`/PharmaEasy/product-details/productDetail.html`)
        
         div11.append(img)
         price.append(MRP,off)
@@ -514,6 +514,12 @@ arr.map(function(ele){
         a.append(div)
         document.querySelector("#display-product").append(a)
         
+       var prod_viewArr = []
+        //product view
+        function viewupdate(){
+            prod_viewArr[0]=ele
+            localStorage.setItem("product_view",JSON.stringify(prod_viewArr))
+        }
     })
 
 }
@@ -523,13 +529,18 @@ let sortArr=[]
 document.getElementById("filter-price").addEventListener("change",filterdata)
 document.getElementById("price_filter").addEventListener("click",filterdata)
 document.getElementById("price_filter-1").addEventListener("click",filterdata)
+document.getElementById("price_filter-2").addEventListener("click",filterdata)
+document.getElementById("price_filter-3").addEventListener("click",filterdata)
 function filterdata(){
     console.log("heloo filter")
     let prodArr= all_product
     let f_prodArr=prodArr
     let filtBy = document.getElementById("filter-price").value
-    let price = document.getElementById("price_filter")
-    let price1 = document.getElementById("price_filter-1")
+    let price = document.getElementById("price_filter")  //below 99
+    let price1 = document.getElementById("price_filter-1") // 100-200
+    let price2 = document.getElementById("price_filter-2") //500-600
+    let price3 = document.getElementById("price_filter-3") //above 900
+
     let off_1 = document.querySelector(".off").textContent
     
     
@@ -545,8 +556,24 @@ function filterdata(){
       if(price1.checked){
         console.log("checked...")
         f_prodArr =f_prodArr.filter(function(ele){
-            console.log(Number.parseFloat(ele.offRate)<=Number.parseInt(price1.value))
-            return Number.parseFloat(ele.offRate)>=Number.parseInt(price1.value)
+            // console.log(Number.parseFloat(ele.offRate)<=Number.parseInt(price1.value))
+            return Number.parseFloat(ele.offRate)>=99&& Number.parseFloat(ele.offRate)<=199
+        })
+
+    }
+    if(price2.checked){
+        console.log("checked...")
+        f_prodArr =f_prodArr.filter(function(ele){
+            // console.log(Number.parseFloat(ele.offRate)<=Number.parseInt(price1.value))
+            return Number.parseFloat(ele.offRate)>=499&& Number.parseFloat(ele.offRate)<=999
+        })
+
+    }
+    if(price3.checked){
+        console.log("checked...")
+        f_prodArr =f_prodArr.filter(function(ele){
+            // console.log(Number.parseFloat(ele.offRate)<=Number.parseInt(price1.value))
+            return Number.parseFloat(ele.offRate)>=999
         })
 
     }

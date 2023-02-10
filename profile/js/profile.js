@@ -1,5 +1,4 @@
- 
- let user_data = JSON.parse(localStorage.getItem("user-data")) || []
+let user_data = JSON.parse(localStorage.getItem("user-data")) || []
  console.log(user_data,user_data == "")
  if(user_data !="")
   displaydata()
@@ -34,7 +33,7 @@ function displaydata(){
 
 
 //user details update part
-document.querySelector("form").addEventListener("click",update)
+document.querySelector("form").addEventListener("submit",update)
 
 function update(){
  event.preventDefault();
@@ -68,4 +67,11 @@ if(userr ==""){
 
 }else{
   console.log(userr)
+}
+
+document.getElementById("log-out").addEventListener("click",logOut)
+
+function logOut(){
+  localStorage.setItem("login-data","")
+  window.location.assign("")
 }

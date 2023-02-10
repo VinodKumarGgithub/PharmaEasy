@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/940072fc04.js" crossorigin="anonymous"></script> 
+    <title>Payment Page</title>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+            <div>
+                <i class="fa-solid fa-shield"></i>
+                <p>100% Secure Payments</p>
+            </div>            
+        </div>
+    </div> 
+
+
+    <!-- main part -->
+    <div id="main">
+        <div id="left">
+            <div id="upi">
+                <div>
+                    <h2>UPI ID</h2>
+                    <p>Get cashback upto ₹100 or gift vouchers on paying via UPI!...+1 Offer(s)</p>
+                    <h5>Add New UPI ID</h5>
+                </div>
+                <div>
+                    <input type="email" placeholder="Enter your UPI ID"/>
+                    <input type="submit" value="Place Order & Pay">
+                </div>
+                <hr>
+           </div>
+
+           <!-- second -->
+           <div id="second">
+            <h2>Offers for You</h2>
+            <div>
+                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="">
+                <div>
+                  <p> Paytm Wallet</p> 
+                  <p>Up to ₹400 Cashback on min. tranction of ₹799 Valid once per user</p>
+                </div>
+                <input type="radio">
+                
+            </div>
+            <hr>
+
+            <div>
+                <img src="https://cdn.pharmeasy.in/payments/amazonpay_new.png" alt="">
+                <div>
+                  <p> Paytm Wallet</p> 
+                  <p>Get cashback upto ₹100 or gift vouchers on paying via UPI!...+1 Offer(s)</p>
+                </div>
+                <input type="radio">
+                
+            </div>
+            <hr>
+
+            <div>
+                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png" alt="">
+                <div>
+                  <p> Paytm Wallet</p> 
+                  <p>Up to ₹400 Cashback on min. tranction of ₹799 Valid once per user</p>
+                </div>
+                <input type="radio">
+            
+            </div> 
+            <hr>
+           </div>
+
+           <!-- thired  -->
+
+           <div id="third">
+            <h2>Other options</h2>
+            <div>
+                <img src="https://cdn.pharmeasy.in/payments/card.png" alt="">
+                <div>
+                  <p> Credit/Debit Card</p> 
+                  <p>Get cashback upto ₹100 or gift vouchers on paying via UPI!...+1 Offer(s)</p>
+                </div>
+               
+                <span onclick="showpopUp()" id="airo">></span>     
+            </div>
+            <div>
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/visa.png" alt="">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/mastercard-logo.png" alt="">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/rupay.png" alt="">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/maestro-logo.png" alt="">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/dinerCard.png" alt=""> 
+            </div>
+            <hr>
+
+
+            <div>
+                <img src="https://cdn.pharmeasy.in/payments/card.png" alt="">
+                <div>
+                  <p>Wallets</p> 
+                  <p>Get cashback upto ₹100 or gift vouchers on paying via UPI!...+1 Offer(s)</p>
+                </div>
+               
+                <span id="airo">></span>     
+            </div>
+            <div>
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/visa.png" alt="">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/mastercard-logo.png" alt="">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/rupay.png" alt="">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/maestro-logo.png" alt="">
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/dinerCard.png" alt="">
+            </div>
+            <hr>
+
+
+            
+            <div>
+                <img src="https://cdn.pharmeasy.in/payments/netbanking.png" alt="">
+                <div>
+                  <p>Net Banking</p> 
+                  <p>Get cashback upto ₹100 or gift vouchers on paying via UPI!...+1 Offer(s)</p>
+                </div>
+               
+                <span id="airo">></span>     
+            </div>
+            <hr>
+
+
+
+            <div>
+                <img src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png" alt="">
+                <div>
+                  <p>Cash on Delivery</p> 
+                  <p>Get cashback upto ₹100 or gift vouchers on paying via UPI!...+1 Offer(s)</p>
+                </div>
+               
+                <input type="radio" id="airo">     
+            </div>
+            <hr>          
+           </div>
+
+
+        </div>
+
+        <div id="right">
+            <h4>Price breakdown</h4>
+            <div id="box">
+                <div>
+                    <p>Total MRP</p>
+                    <span id="mrp">₹2300</span>
+                </div>
+                <div>
+                    <p>Discount on MRP</p>
+                    <span id="Discount">-₹230</span>
+                </div>
+                <hr>
+                <div>
+                    <p>Cart Value</p>
+                    <span id="cartValue">₹2070.00</span>
+                </div>
+                <div>
+                    <p>Delivery charges</p>
+                    <span >₹29</span>
+                </div>
+                <hr>
+                <div>
+                    <p>Amount to be paid</p>
+                    <span id="amt">₹2070.00</span>
+                </div>
+                <hr>
+            </div>
+            <div>
+                <h6>₹ Total saving in this <span id="total_save"></span> </h6>
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <div class="login">
+       
+        <div id="logo">
+            <span id ="cross" onclick="closepopUp()" >&times;</span>  
+            <p>Enter New Card</p>
+            <hr>
+            <div>
+                <p id="offer">Offers <img src="https://assets.pharmeasy.in/web-assets/dist/9be14aca.svg" alt=""></p>
+            <div>
+                <p><img src="https://assets.pharmeasy.in/web-assets/dist/38f5c9f3.svg" alt="">UP to ₹600 saving on city bank card on min. tranction  of ₹2000 Valid onece per user</p>
+                <p><img src="https://assets.pharmeasy.in/web-assets/dist/38f5c9f3.svg" alt="">Flat ₹150 offon AU bank cards transaction of ₹2000. Valid once per user.</p>
+            </div>
+            </div>
+            
+        </div>
+        <!-- <a href="./OTP.html">clickkkkk</a> -->
+        <form>
+           
+            <div id="newlog">
+                <div>
+                    <label for="">Card Number</label>
+                    <input type="number" id="number"  placeholder="1234-5678-5896-2587"/>
+                    <p id="nums"></p>
+
+                    <div id="center">
+                        <div>
+                            <label for="">Valid Through</label>
+                            <input type="text" id="date" placeholder="MM/YY">
+                            <P id="dates"></P>
+                            </div>
+                            <div>
+                                <label for="">CVV</label>
+                                <input type="text" id="cvv" placeholder="123">
+                                <P id="cvvnum"></P>
+                            </div>
+                    </div>
+                    
+
+                    <div>
+                        <label for="">Name on Card</label>
+                        <input type="text" id="name" placeholder="e.g Ravi Kumar">
+                        <p id="names"></p>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox"/>
+                        <p>Save this card for future payments</p>
+                    </div>
+
+                    <div id="butun">
+                        <input id="button" type="submit" value="Place Order and Pay ₹" >
+                    </div>
+
+                   
+                </div>
+                <!-- <button onclick = "clickBtn()">Send OTP</button> -->
+                <div>
+                    <p id="ptag"></p>
+                    <p>By clicking continue, you agree with our <span> Privacy Policy</span></p>
+
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+
+    <div class="success">
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="">
+           <h1 id="htag"> Signup SuccessFully!</h1> 
+           <span id ="danger">&times;</span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/3e0c0ed060.js" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="payemnt.js"></script>
