@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: rgb(48, 54, 60);
+}
+#header div{
+    display: flex;
+    justify-content: space-between;
+}
+#header{
+    background-color: rgb(16,132,126);
+    padding:3px 150px ;
+}
+#header div img{
+    width: 15%;
+    padding: 18px;
+    margin-right: 100px;
+}
+#header div p{
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color:  rgb(255, 255, 255);
+}
+#header div >div span img{
+    height: 58px;
+background-color: white;
+color: black;
+}
+i{
+    margin-top: 38px;
+    text-align: center;
+    margin-right: 10px;
+    color: bisque;
+}
+
+#main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-left: 200px;
+    /* opacity: 0; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    
+}
+#left{
+    width: 50%;
+    /* border: 1px solid grey; */
+    /* height: 2000px; */
+    margin: 5px;
+}
+#right{
+    /* border: 1px solid grey; */
+    width: 50%;
+    margin: 5px;
+    /* height: 2000px; */
+}
+#upi{
+    margin: 5px;
+    margin-bottom: 5px;
+}
+#upi div:first-child{
+    width: 100%;
+    margin: auto;
+    line-height: 2;
+}
+#upi div:last-child{
+    display: flex;   
+}
+#upi div input{
+    width: 240px;
+    padding: 10px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    /* height: 14px; */
+}
+#upi div input:first-child{
+    border:1px solid rgba(128, 128, 128, 0.37); ;
+}
+#upi div input:first-child:focus{
+    outline: 1px solid rgba(128, 128, 128, 0.37);
+}
+#upi div input:last-child{
+    background-color: rgb(149,149,149);
+   color: white;
+   border: none;
+   height: 40px;
+   
+   /* padding: 0px; */
+}
+h2{
+    color: rgba(34, 5, 5, 0.781);
+    
+}
+#second{
+    margin: 10px;
+}
+#second>div{
+    display: flex;
+}
+
+#second>div img{
+    /* width: 33px; */
+    height: 25px;
+    margin-top: 25px;
+}
+
+#second>div>div{
+    margin: 20px;
+    line-height: 1.5;
+}
+
+#third{
+    margin:10px ;
+    line-height: 1.8;
+}
+
+#third>div{
+    display: flex;
+}
+#third>div:last-child div{
+    display: flex;
+}
+#third div img{
+    width: 50px;
+    height: 50px;
+}
+#third>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+}
+
+#right{
+    /* margin-top: 50px; */
+    /* width: 50%;
+    margin: auto; */
+    margin-top: 40px;
+}
+#third span{
+    font-size: 20px;
+    height: 20px;
+    color: rgb(16,132,126);
+    font-weight: bold;
+    cursor: pointer;
+}
+#third p:last-child{
+    color: grey;
+    font-size: 15px;
+}
+#second p:last-child{
+    color: grey;
+    /* font-size: 15px; */
+}
+#upi p{
+color: grey;
+}
+
+
+h4{
+    width: 58%;
+    margin: auto;
+    line-height: 3;
+    font-size: 22px;
+    color: grey;
+}
+#right hr{
+    width: 58%;
+    margin: auto;
+    /* line-height: 3; */
+    /* font-size: 22px; */
+    color: rgba(128, 128, 128, 0.822);
+    /* font-weight: 10; */
+}
+#right #box>div{
+    display: flex;
+    width: 58%;
+    margin: auto;
+    justify-content: space-between;
+    line-height: 2;
+}
+#right #box>div p,span{
+    color: grey;
+}
+#right #box >div:last-child p{
+    width: 58%;
+    margin: auto;
+    line-height: 3;
+    font-size: 22px;   
+}
+h6{
+    width: 58%;
+    margin: auto;
+    line-height: 2;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(242,255,248);
+    border: 1px dashed rgb(110,195,180);
+    margin-top: 10px;
+    border-radius: 5px;
+    color: rgb(110,195,180);
+}
+
+/* pop up */
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.overlay{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.692);
+    z-index: -1;
+    opacity: 0;
+    transition: 0s;
+}
+form{
+    padding: 18px;
+}
+.showoverlay{
+    opacity: 1;
+    z-index: 1;
+}
+.login{
+    width: 400px;
+    background-color: aliceblue;
+    height: 100vh;
+    position: absolute; 
+    left: -70.4%; 
+    z-index: 9;
+    right: 0px;
+    transition: 0.2s;
+    top: 0px; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: fixed;
+}
+/* #newlog h3{
+    font-size: 20px;
+    color: gray;
+    margin-top:5px ;
+    margin-bottom: 20px;
+} */
+.showlogin{
+    left: 73.6%;
+}
+#newlog{
+    padding: 20px;
+    margin-top: -60px;
+}
+.login input{
+    width: 100%;
+    height: 45px;
+    margin-top:15px ;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid grey;
+    font-size: 15px;
+    padding-left: 12px;
+    /* border: 0.5px solid grey;    */
+}
+.login input:focus{
+    outline: none;
+}
+.login input::placeholder{
+    /* padding: 12px; */
+    color: grey;
+    font-weight: 200;
+    font-size: 15px;
+}
+#center{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+form #newlog #butun input{
+    width: 100.5%;
+    background-color: rgb(16,132,126);
+    color: white;
+    padding: 10px;
+    height: 52px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login  p{
+    /* margin-top: 25px; */
+    margin-bottom: 20px;
+    color: grey;
+    font-size: 14px;
+    }
+#logo{
+    background-color: rgb(240,248,255);
+    /* display: flex; */
+    margin: 30px;
+}
+span{
+    color: rgb(16,132,126);
+    font-size: px;
+}
+#third #airo{
+    font-size: 26px;
+    margin-left: 10px;
+}
+#cross{
+   
+    position: absolute;
+    left: -60px;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+    background-color:rgb(240,248,255);
+     color: black;
+    text-align: center;
+    line-height: 40px;
+    font-size: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -35px;
+}
+.checkbox input{
+    left: 0px;
+    width: 15px;
+}
+.checkbox p{
+    margin-top: 28px;
+    margin-right: 90px;
+    font-size: 15px;
+}
+#butun {
+    margin-top: -20px;
+}
+#logo>div{
+    margin-top: 20px;
+    border: 0.1px solid grey;
+    border-radius:10px;
+    padding: 10px;
+
+}
+#logo #offer{
+    margin-top: -20px;
+    background-color:rgb(240,248,255) ;
+    font-size: 20px;
+    color: rgb(16,132,126);
+}
+
+.success{
+    width: 400px;
+    height: 320px;
+    position: absolute;
+    left: -50%;
+    right: 50%;
+    transform: translate(-50%,50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px black;
+    background-color:rgb(16,132,126);
+  }
+

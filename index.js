@@ -119,7 +119,7 @@ var newLaunches=[
 var cardNewLaunches = "";
 newLaunches.map(function (ele) {
 cardNewLaunches += `
-<a href="/PharmaEasy/All products/Products.html">
+<a href="./Products.html">
   <div >
     <div >
       <img src=${ele.image} style="height:92px"  alt="">
@@ -142,7 +142,7 @@ if(localStorage.getItem("status")){
       if(elm.ph==temo_name ){
   document.getElementById("name-display").textContent = elm.name;
   console.log(elm.name)
-  document.getElementById("profile-page").setAttribute("href","/PharmaEasy/profile/profile.html")
+  document.getElementById("profile-page").setAttribute("href","./profile.html")
 
 
       }

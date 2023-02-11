@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./profile_footr.css">
+    <link rel="stylesheet" href="./addresh.css">
+    <script src="https://kit.fontawesome.com/940072fc04.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <!-- navbar -->
+    <div id="nav">
+        
+        <!-- up -->
+        <div class="nav-l">
+            <div>
+               <a href="./index.html"><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""></a> 
+            </div>
+            <div>
+                <button> <span>Select adress</span></button>
+                <input type="search" placeholder="| Search medicines/Healthcare Products.....">
+            </div>
+
+        </div>
+        <!-- down -->
+        <div class="nav-r">
+            <div>
+                <a href="./Products.html">Order Medicines</a>
+                <a href="./Products.html">Healthhcare Products</a>
+                <a href="./Products.html">Lab Tests</a>
+                <a href="./Products.html">RTPCR</a>
+            </div>
+            <div>
+                <a href="./Products.html"><div ><img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt=""><span class="off"></span><span id="o_ff">Offers</span></div> </a>
+                <a href="./profile.html" ><div ><img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt=""><span id="name-display"> Hello,login</span></div> </a>
+                <a href="./cart.html" ><div><img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg" alt=""><span  id="p-cart-count"></span >Cart</div> </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main body -->
+    <div id="main" >
+        <div>
+           <div>
+            <a href=""><p id="name"><span>v</span> USER NAME</p></a> 
+
+           </div>
+           <div id="user-menu">
+                <div>
+                    <div><img src="https://assets.pharmeasy.in/web-assets/dist/6d757b2d.svg" alt="bag"></div>
+                    <div> 
+                    <p>YOUR ORDERS</p> 
+                    <a href=""><p>Medicine/Healthcare</p></a> 
+                    <a href=""><p>Lab Tests</p></a> 
+                    </div>
+                </div>
+                <div>
+                    <div><img src="https://assets.pharmeasy.in/web-assets/dist/6d757b2d.svg" alt=""></div>
+                    <div>
+                    <p>REFILLS</p> 
+                    <a href=""><p>Active</p></a> 
+                    <a href=""><p>Inactive</p></a> 
+                </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://assets.pharmeasy.in/web-assets/dist/5673272f.svg" alt="">
+                    </div>
+                    <div>
+                        <p>MEDICAL RECORD</p> 
+                        <a href=""><p>All</p></a> 
+                    </div>
+                </div>
+                <div>
+                    <div><img src="https://assets.pharmeasy.in/web-assets/dist/a2995809.svg" alt=""> </div>
+                    <div>
+                    <p>PROFILE SETTING</p> 
+                    <a href=""><p>Edit Profile</p></a> 
+                    <a href="" onclick="showpopUp()"><p>Manage Adress</p></a> 
+                    <a href=""><p>Manage Refunds</p></a> 
+                    </div>
+                </div>
+                <div>
+                    <div><img src="https://assets.pharmeasy.in/web-assets/dist/ab7afe51.svg" alt=""></div>
+                    <div>
+                    <p>WALLET</p> 
+                    </div>
+                </div>
+                <div>
+                    <div><img src="https://assets.pharmeasy.in/web-assets/dist/319c59f0.svg" alt=""></div>
+                    <div><p>REFER & EARN</p> </div>
+                </div>
+                <div>
+                    <div><img src="https://assets.pharmeasy.in/web-assets/dist/9a22e94b.svg" alt=""></div>
+                    <div><a href="./index.html" id="log-out"> <p id="log">LOG OUT</p></a> </div>
+                </div>
+           </div>
+        </div>
+        <!-- user-edit -->
+        <div id="edit">
+           <p>EDIT PROFILE</p>
+           <div>
+              <form action="">
+                <label for="">Name <span>*</span></label>
+                <input type="text" required id="n">
+                <label for="">Mobile Number <span>*</span></label>
+                <input type="number" disabled id="number">
+                <label for="">Email <span>*</span></label>
+                <input type="email" required id="mail">
+                <input type="submit" value="SAVE" >
+            </form>
+           </div>
+        </div>
+    </div>
+    <!-- bottom -->
+      <!-- 1st part -->
+    <div id="bottom-1">
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=1.25&q=100" alt="">
+            <p>1 Lakh+ Products</p>
+            <p>We maintain strict quality controls on all our partner retailers, so that you always get standard quality products.</p>
+        </div>
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=1.25&q=100" alt="">
+             <p>Secure Payment</p>
+             <p>100% secure and trusted payment protection</p>
+        </div>
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/256fe591.svg?dim=0x72&dpr=1.25&q=100" alt="">
+            <p>Easy Return</p>
+            <p>We have a new and dynamic return window policy for medicines and healthcare items. Refer FAQs section for more details.</p>
+        </div>
+    </div>
+     
+    <!-- 2nd part -->
+    <div id="bottom-2">
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg" alt="">
+        </div>
+        <div>
+            <p>Download the App for Free</p>
+            <div>
+                <div>
+                <a href="https://play.google.com/store/apps/details?id=com.phonegap.rxpal&hl=en_IN&gl=US&utm_source=web&utm_medium=footer" target="_blank"><button><img src="https://assets.pharmeasy.in/web-assets/dist/3380aedc.png" alt=""><div>Google play</div> </button></a>
+                <a href="https://apps.apple.com/in/app/pharmeasy-healthcare-app/id982432643" target="_blank"><button><img src="https://assets.pharmeasy.in/web-assets/dist/9bf5c576.png" alt="" id="apple"><div> Apple store</div></button></a>
+               </div>
+        </div>
+        </div>
+    </div>
+
+     <!-- footer -->
+     <div id="footer">
+        <!-- 1st div -->
+     <div> 
+        <div>
+            <div>
+                <h3>Company</h3>
+                <a href=""> About Us</a>
+                <a href="">Careers</a>
+                <a href="">Blog</a>
+                <a href="">Partner with PharmEasy</a>
+                <a href="">Sell at PharmEasy</a>
+            </div>
+            <div>
+                <h3>Our Services</h3>
+                <a href="">Order Medicine</a>
+                <a href="">Healthcare Products</a>
+                <a href="">Lab Tests</a>
+                <a href="">Find Nearest Collection Centre</a>
+                <a href="">Surgeries<ap>
+            </div>
+        </div>
+  <!-- 2nd div -->
+        <div>
+            <h3> Featured Categories</h3>
+           <a href="">Covid Essentials</a>
+           <a href="">Mega Clearance Sale</a>
+           <a href="">Personal Care</a>
+           <a href="">Healthcare Devices</a>
+           <a href="">Health Food and Drinks</a>
+           <a href="">Home Care</a>
+           <a href="">Mother and Baby Care</a>
+           <a href="">Diabetic Care</a>
+           <a href="">Fitness Supplements</a>
+           <a href="">Skin Care</a>
+           <a href="">Sexual Wellness</a>
+           <a href="">Accessories & Wearables</a>
+           <a href="">Health Condition</a>
+           <a href="">Ayurvedic Care</a>
+           <a href="">Elderly Care</a>
+           <a href="">Top Products</a>
+        </div>
+        <!-- 3rd div -->
+        <div>
+            <div>
+                <h3>Need Help</h3>
+                <a href="">Browse All Medicines</a>
+                <a href="">Browse All Molecules</a>
+                <a href="">Browse All Cities</a>
+                <a href="">Browse All Areas</a>
+                <a href="">Browse All Stores</a>
+                <a href="">FAQs</a>
+            </div>
+            <div>
+                <h3>Policy Info</h3>
+                <a href="">Editorial Policy</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Vulnerability Disclosure Policy</a>
+                <a href="">Terms and Conditions</a>
+                <a href="">Customer Support Policy</a>
+                <a href="">Return Policy</a>
+            </div>
+        </div>
+        <!-- 4th div -->
+        <div>
+            <h3>Follow us on</h3>
+            <div id="social_media">
+            <a href="https://www.instagram.com/pharmeasyapp/" target="_blank"><img src="https://assets.pharmeasy.in/apothecary/images/Instagram.svg?dim=32x0" alt="insta"> </a>
+            <a href="https://www.facebook.com/pharmeasy/" target="_blank"><img src="https://assets.pharmeasy.in/apothecary/images/facebook.svg?dim=32x0" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCDats_DLX-bGZH3-KGu8JhA" target="_blank"><img src="https://assets.pharmeasy.in/apothecary/images/Youtube.svg?dim=32x0" alt=""></a>
+            <a href="https://www.twitter.com/pharmeasyapp/" target="_blank"><img src="https://assets.pharmeasy.in/apothecary/images/Twitter.svg?dim=32x0" alt=""></a>
+           </div>
+        </div>
+     </div>
+     <h3>Our Payment Partners</h3>
+     <div>
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/gpay.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/paytm.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/phonepe.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/amazon.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/mobikwik.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/olamoney.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/maestro.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/mastercard.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/visa.png?dim=1440x0" alt="">
+            <img src="https://assets.pharmeasy.in/apothecary/images/rupay.png?dim=1440x0" alt="">
+        </div>
+        <div>
+            <p>© 2023 PharmEasy. All Rights Reserved</p>
+        </div>
+     </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="login">
+       
+        <div id="logo">
+            <span id ="cross" onclick="closepopUp()" ><i class="fa-solid fa-arrow-left"></i></span>  
+            <h3>Add Address</h3>   
+        </div>
+        <form id="addreshForm">        
+            <div id="newlog">
+                <div>
+                    <input type="text" id="name"  placeholder=" " class="text-box" required/>
+                    <label class="form-label">
+                        Name<span>*</span>
+                    </label>
+                    </div>
+                    <div>
+                       
+                        <input type="number" id="number" placeholder=" " class="text-box" />
+                        <label class="form-label2">
+                            Mobile Number<span>*</span>
+                        </label> 
+                    <p>For all delivery related communication</p>
+                    </div>
+
+                    <div>
+                       
+                        <input type="text" id="pinCode" placeholder=" " class="text-box" required>
+                        <label class="form-label3">
+                            Pincode<span>*</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="addres" id="addres" placeholder="House number and building*" required>
+                    </div>
+
+                    <div>
+                        <input type="text" id="strret" placeholder="Strret Name*" required>
+                        <p id="names"></p>
+                    </div>
+
+                    <div id="addrestype">
+                        <p>Address type</p>
+                        <div>
+                        <button disabled>Home</button>
+                        <button disabled>Work</button>
+                        <button disabled>Others</button>
+                        </div>
+                        
+                    </div>
+                    <div id="butun">
+                        <input id="button" type="submit" value="Save and Continue" >
+                    </div>    
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</body>
+<script src="./profile.js"></script>
+<script src="./address.js"></script>
+</html>
