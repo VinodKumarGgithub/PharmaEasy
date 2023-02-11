@@ -7,7 +7,7 @@ function signUp(event) {
   var phone = document.getElementById("number").value;
 //   console.log(name,email,phone);
   if(phone.length!=10 ){
-    alert("please enetr 10 digit phone number..!");
+    alert(`"please enter 10 digit phone number"`);
     return;
   }
 let user_data = JSON.parse(localStorage.getItem("user-data")) || []
