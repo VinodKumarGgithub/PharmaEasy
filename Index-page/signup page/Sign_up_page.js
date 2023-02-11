@@ -10,10 +10,11 @@ function signUp(event) {
     alert("please enetr 10 digit phone number..!");
     return;
   }
+  localStorage.setItem("login-data",phone)
   var obj = { name: name, mail: email, ph: phone };
   arr.push(obj);
   localStorage.setItem("user-data", JSON.stringify(arr));
-  window.location.assign("/navbar_footer/Sign_Up_Page.html");
+  window.location.assign("/PharmaEasy/Index-page/index.html");
   document.getElementById("name").value="";
  document.getElementById("email").value="";
  document.getElementById("number").value="";

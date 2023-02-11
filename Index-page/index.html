@@ -38,11 +38,11 @@
     <div id="navbar">
         <div id="left-nav">
             
-            <a href=""><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="pharmeasy"></a>
+            <a href="./index.html"><img src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=256x0" alt="pharmeasy"></a>
             <p id="logo-line">|</p>
            <div>
             <p id="left-label"><img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=32x0" alt="thunder"> Express Delivery to</p>
-            <button id="pincode">Select pincode <img src="./navbar icons/downarrow.svg" alt=""></button>
+            <button id="pincode">560100 Banglore<img src="./navbar icons/downarrow.svg" alt=""></button>
         </div>
         </div>
 
@@ -51,16 +51,15 @@
             <a href="https://pey.onelink.me/3krD/2bwqxjrj"><div><button><img src="./navbar icons/mobile1.svg" alt="" ><span>Download App</span> </button></div></a>
             
 
-            <a href="" id="under"><p><img src="./navbar icons/profile.svg" alt=""><span onclick="showpopUp()"  id="name-display">Hello, log in</span> </p></a> 
-            <a href="" id="under"><p><img src="./navbar icons/profile.svg" alt=""><span id="name-display">Hello, log in</span> </p></a> 
+            <a href="" id="profile-page"><p><img src="./navbar icons/profile.svg" alt=""><span id="name-display"><span onclick="showpopUp()"  id="name-display-1">Hello, log in</span> </span></p></a>
 
-            <a href="" id="under"><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
-            <a href="" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span>Cart</span> </p></a>
+            <a href="/PharmaEasy/All products/Products.html" id="under"><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
+            <a href="/PharmaEasy/cart/cart.html" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span>Cart</span> </p></a>
         </div>
     </div>
     <div id="catagory-nav">
         <div>
-        <p>Medicine</p>
+       <a href="/PharmaEasy/All products/Products.html" style="text-decoration: none;"><p>Medicine</p></a> 
         <p>Lab Tests</p>
         <select name="" id="navbar_select">
             <option value="">Healthcare</option>
@@ -75,10 +74,10 @@
     </div>     
 
 
-    <div id="firstDiv">
+    <div id="firstDiv" >
         <div
           id="label1"
-          class="d-flex justify-content-around font-weigth-bold p-5"
+          class="d-lg-flex justify-content-around font-weigth-bold p-5"
         >
           <div><h4>What are you looking for?</h4></div>
           <div class="p-3">
@@ -141,7 +140,7 @@
       <!-- prescription upload -->
       <div id="prescrption" class="d-lg-flex mt-5 mb-5 rounded-3">
         <!-- left part -->
-        <div class="d-flex align-items-center">
+        <div class="d-lg-flex align-items-center">
           <div>
             <img
               src="https://assets.pharmeasy.in/apothecary/images/rx_upload.svg?dim=1440x0"
@@ -188,8 +187,8 @@
       </div>
   
       <!-- become a plus member  -->
-      <div id="plusMember" ">
-        <div class="d-flex justify-content-around">
+      <div id="plusMember" class="d-sm-flex flex-column">
+        <div class="d-lg-flex justify-content-around">
           <!-- left -->
           <div>
             <div>
@@ -234,7 +233,7 @@
       <div class="m-5">
         <h3 class="fw-bold">Shop by Concern</h3>
         <p class="text-secondary ">Products are handpicked by experts</p>
-        <div class="d-flex gap-5 ">
+        <div class="d-lg-flex gap-5 ">
           <div class="card border-0" >
             <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0" class="card-img-top" alt="...">
             <div class="card-body">
@@ -290,11 +289,11 @@
   
       <!-- Frequently Booked Lab Tests -->
       <div id="fbLab">
-        <div class="d-flex justify-content-between  ">
+        <div class="d-lg-flex justify-content-between  ">
           <h3 class="text-dark fw-bold">Frequently Booked Lab Tests</h3>
           <p class="text-success fw-bold">View All</p>
         </div>
-        <div class="d-flex justify-content-between ">
+        <div class="d-lg-flex justify-content-between d-sm-block">
           <div  >
             
             <p class="btn btn-danger">63% OFF</p>
@@ -388,7 +387,7 @@
       <!--Why Choose Us -->
       <div id="chooseUs">
         <h3 class="fw-bold">Why Choose Us?</h3>
-        <div class="d-flex gap-5">
+        <div class="d-lg-flex d-sm-block gap-5">
           <div class="d-flex">
             <img src="https://assets.pharmeasy.in/apothecary/images/family.svg?dim=96x0" alt="">
             <div>
@@ -705,15 +704,15 @@
             <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="">
             <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg?dim=256x0" alt="">
         </div>
-        <!-- <a href="./OTP.html">clickkkkk</a> -->
-        <form action="">
+        <!-- <a href="./OTP.html">clickkkkk</a>  /PharmaEasy/sign up log in/OTP.html-->
+        <form action=" /PharmaEasy/sign up log in/OTP.html" id="form">
            
             <div>
                 <div>
                     <h3>Quick Login / Register</h3>
                     <input type="number" id="number"  placeholder="Enter your mobile number.."/>
                     <!-- <hr> -->
-                  <input id="button"  type="submit" value="Send OTP" />
+                  <a href="/PharmaEasy/sign up log in/OTP.html" id="otp-red"> <input  type="submit" id="button" value="Send OTP" /></a>
                 </div>
                 <!-- <button onclick = "clickBtn()">Send OTP</button> -->
                 <div>
@@ -731,6 +730,8 @@
 </html>
 <!-- <script src="/PharmaEasy/sign up log in/otp.js"></script> -->
 <script src="/PharmaEasy/sign up log in/signup.js"></script>
+<script src="/PharmaEasy/sign up log in/OTP.html"></script>
+<!-- <script src="/PharmaEasy/sign up log in/otp.js"></script> -->
 
 </body>
 </html>

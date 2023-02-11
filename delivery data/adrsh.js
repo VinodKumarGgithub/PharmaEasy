@@ -17,9 +17,10 @@ function addreshData(){
     document.getElementById("addres").value=""
     document.getElementById("strret").value=""
 }
-document.getElementById("danger").addEventListener("click",closepopUp)
+// document.getElementById("danger").addEventListener("click",closepopUp)
 
 function showpopUp(){ 
+    event.preventDefault();
     document.querySelector(".overlay").classList.add("showoverlay");
     document.querySelector(".login").classList.add("showlogin");
 }
@@ -30,6 +31,7 @@ function closepopUp(){
 }
 
 function showpopup(){
+    event.preventDefault();
     document.querySelector(".success").classList.add("showSuccess");
 }
 
@@ -39,21 +41,21 @@ var otp=JSON.parse(localStorage.getItem("otp"));
 var Userotp=JSON.parse(localStorage.getItem("userOTP"));
 console.log(otp,Userotp)
     if(otp==Userotp){
-        window.location.href = 'homepage.html';
+        // window.location.href = 'homepage.html';
     }
 }
 
-document.getElementById("buttons").addEventListener("click",closes);
-function closes(){
-    var name=document.getElementById("name").value;
-    var number=document.getElementById("number").value;
-    var pin=document.getElementById("pinCode").value;
-    var addres=document.getElementById("addres").value;
-    var street=document.getElementById("strret").value;
+// document.getElementById("buttons").addEventListener("click",closes);
+// function closes(){
+//     var name=document.getElementById("name").value;
+//     var number=document.getElementById("number").value;
+//     var pin=document.getElementById("pinCode").value;
+//     var addres=document.getElementById("addres").value;
+//     var street=document.getElementById("strret").value;
 
-    if(name==""&&number==""&&pin==""&&addres==""&&street==""){
-        alert("Plase fill all the filed !")
-    }else{
-        closes(showpopup())
-    }
-}
+//     if(name==""&&number==""&&pin==""&&addres==""&&street==""){
+//         alert("Plase fill all the filed !")
+//     }else{
+//         closes(showpopup())
+//     }
+// }

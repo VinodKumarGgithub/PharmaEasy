@@ -1,14 +1,16 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
+    color: rgb(48, 54, 60);
 }
 #header div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #header{
     background-color: rgb(16,132,126);
-   
+    padding:3px 150px ;
 }
 #header div img{
     width: 15%;
@@ -16,23 +18,25 @@
     margin-right: 100px;
 }
 #header div p{
-    color: white;
-    font-size: 20px;
+    
     display: flex;
     align-items: center;
     text-align: center;
-    margin-right: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color:  rgb(255, 255, 255);
 }
 #header div >div span img{
- width: 30px;
- height: 30px;
+    height: 58px;
 background-color: white;
 color: black;
 }
 i{
-    margin-top: 42px;
+    margin-top: 38px;
     text-align: center;
-    margin-right: 18px;
+    margin-right: 10px;
     color: bisque;
 }
 
@@ -243,7 +247,7 @@ form{
     margin-bottom: 20px;
 } */
 .showlogin{
-    left: 70.5%;
+    left: 73.6%;
 }
 #newlog{
     padding: 20px;
@@ -369,29 +373,33 @@ span{
     background-color:rgb(16,132,126);
   }
 
-
-  form #newlog .form-label{
-    position: absolute;
-    top: 17.8rem;
-    left: 3.5rem;
-    cursor: text;
-    font-size: 18px;
-    transition: top 200ms ease-in,left 200ms ease-in,font-size 200ms ease-in;
-}
-form #newlog  .text-box:focus ~ .form-label
-{
-   top:16.5rem;
-   left: 3.5rem;
-   font-size: 15px;
-   background-color: rgba(250, 250, 250, 0.89);
-   color: rgb(16,132,126);
-}
-form #newlog  .text-box:not(:placeholder-shown).text-box:not(:focus)~.form-label{
-    top:16.5rem;
-    left: 3.5rem;
-    font-size: 15px;
-    background-color: rgba(250, 250, 250, 0.89);
-    color: rgb(16,132,126);
+  @media only screen and (max-width: 1000px) {
+    #header{
+        display: none;
+    }
+    #main #right{
+        display: none;
+    }
+    #main #left{
+        width: 100%;
+        margin: auto;
+        margin-left: -140px;
+    }
+   
+    
 }
 
-
+@media only screen and (max-width:600px){
+    #header{
+        display: none;
+    }
+    #main #right{
+        display: none;
+    }
+    #main #left{
+        width: 100%;
+        margin: auto;
+        margin-left: -140px;
+    }
+   
+}

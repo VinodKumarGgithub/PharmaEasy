@@ -119,12 +119,13 @@ var newLaunches=[
 var cardNewLaunches = "";
 newLaunches.map(function (ele) {
 cardNewLaunches += `
+<a href="/PharmaEasy/All products/Products.html">
   <div >
     <div >
-        <img src=${ele.image} style="height:92px"  alt="">
+      <img src=${ele.image} style="height:92px"  alt="">
     </div>
-     <div >
-         <div>${ele.title}</div>
+     <div ></a> 
+         <div>  ${ele.title}</div>
          <div>MRP ₹${ele.mrp}</div>
          <div>₹${ele.offRate} <span>${ele.offer}</span></div>
      </div>
@@ -134,4 +135,21 @@ cardNewLaunches += `
   
 });
 
+if(localStorage.getItem("status")){
+  let temo_name=localStorage.getItem("login-data")
+  var userdata=JSON.parse(localStorage.getItem("user-data")) || [];
+  var user =userdata.map(function(elm,index){
+      if(elm.ph==temo_name ){
+  document.getElementById("name-display").textContent = elm.name;
+  console.log(elm.name)
+  document.getElementById("profile-page").setAttribute("href","/PharmaEasy/profile/profile.html")
 
+
+      }
+    })
+
+
+}else{
+ 
+  localStorage.setItem("login-data","")
+}

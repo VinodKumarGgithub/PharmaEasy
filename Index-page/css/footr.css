@@ -81,3 +81,30 @@
   line-height: 20px;
   color: rgb(48, 54, 60);
  }
+
+ @media only screen and (max-width: 1000px) {
+   /* Medium Screen  */
+   #footer>div:first-child{
+      flex-direction: column;
+   }
+   #footer>div:last-child>div:last-child{
+      display: none;
+   }
+   #footer>div:last-child>div:first-child img{
+      margin: 10px;
+   }
+ }
+
+ 
+@media only screen and (max-width: 600px) {
+   /* small Screen  */
+   #footer>div:first-child{
+      display: none;
+   }
+   #footer>div:last-child>div:first-child img{
+      margin: 8px;
+   }
+   #footer>div:last-child>div:last-child{
+      display: none;
+   }
+}

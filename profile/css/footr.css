@@ -1,0 +1,111 @@
+ /* footer */
+ #footer{
+    width: 100%;
+    
+     background-color: #eef4ff;
+  }
+  #footer>div:first-child{
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding-top:40px ;
+  }
+ 
+  
+  /* social media part */
+  #footer>div>div:last-child>div{
+     width: 220px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+  }
+ #social_media a img{
+     height: 35px;
+ }
+  #footer>div div{
+     display: flex;
+    flex-direction: column;
+  }
+  #footer>div a{
+     margin: 10px 5px;
+     
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight : 400;
+    line-height: 20px;
+    color: rgb(48, 54, 60);
+  }
+  #footer>h3{
+     margin-left: 80px;
+     font-family: sans-serif;
+   font-size: 17px;
+   font-weight : 600;
+   line-height: 24px;
+   color: rgb(48, 54, 60);
+  }
+
+  #footer>div h3{
+   font-family: sans-serif;
+   font-size: 17px;
+   font-weight : 600;
+   line-height: 24px;
+   color: rgb(48, 54, 60);
+}
+  /* footer bottom part */
+  #footer>div:last-child{
+     display: flex;
+     width: 90%;
+     margin: auto;
+     justify-content: space-between;
+     align-items: center;
+     
+  }
+
+
+  #footer>div:last-child>div:first-child{
+     display: flex;
+     width: 55%;
+     flex-direction: row;
+     justify-content: space-between;
+     /* border: 1px solid red; */
+  }
+
+  /* partner logo */
+  #footer>div:last-child>div:first-child img{
+     height: 20px;
+  }
+
+  #footer>div:last-child>div:last-child{
+   font-family: sans-serif;
+   font-size: 14px;
+   font-weight : 400;
+   line-height: 20px;
+   color: rgb(48, 54, 60);
+  }
+
+  @media only screen and (max-width: 1000px) {
+   /* Medium Screen  */
+   #footer>div:first-child{
+      flex-direction: column;
+   }
+   #footer>div:last-child>div:last-child{
+      display: none;
+   }
+   #footer>div:last-child>div:first-child img{
+      margin: 10px;
+   }
+ }
+
+ 
+@media only screen and (max-width: 600px) {
+   /* small Screen  */
+   #footer>div:first-child{
+      display: none;
+   }
+   #footer>div:last-child>div:first-child img{
+      margin: 8px;
+   }
+   #footer>div:last-child>div:last-child{
+      display: none;
+   }
+}

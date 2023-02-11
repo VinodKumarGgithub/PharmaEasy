@@ -60,6 +60,7 @@
   #navbar>#right-nav a{
    text-decoration: none;
    color: black;
+ 
   }
   a{
    text-decoration: none;
@@ -130,4 +131,27 @@
 #under{
    /* border: 1px solid black; */
    padding-top: 15px;
+}
+@media only screen and (max-width: 1000px) {
+   /* Medium Screen  */
+   #navbar{
+      /* display: flex; */
+      flex-direction: column;
+   }
+   #right-nav{
+      display: none;
+   }
+   #catagory-nav>div{
+      flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   /* Small Screen  */
+   #right-nav{
+      display: none;
+   }
+   #catagory-nav>div{
+      display: none;
+   }
 }

@@ -1,0 +1,665 @@
+var discoverOffer=[
+    {
+        "image":"https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0",
+        "title":"Medicine",
+        "offer":"UPTO 20% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0",
+        "title":"Lab Tests",
+        "offer":"UPTO 70% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0",
+        "title":"Healthcare",
+        "offer":"UPTO 60% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0",
+        "title":"Surgeries",
+        "offer":""
+    }
+    {
+        "image":"https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0",
+        "title":"Health Blogs",
+        "offer":""
+    }
+    {
+        "image":"https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0",
+        "title":"PLUS",
+        "offer":"Save 5% Extra"
+    }
+    {
+        "image":"https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0",
+        "title":"Offers",
+        "offer":""
+    }
+    {
+        "image":"https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0",
+        "title":"Value Store",
+        "offer":"UPTO 50% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+]
+
+var Topbanner=["https://cdn01.pharmeasy.in/dam/banner/banner/3365bdaaa74-STAR25.jpg",
+"https://cdn01.pharmeasy.in/dam/banner/banner/3b214f09ce6-bogo_2.jpg",
+"https://cdn01.pharmeasy.in/dam/banner/banner/048facc8065-634x274a.jpg",
+"https://cdn01.pharmeasy.in/dam/banner/banner/7854fe478a4-LivEasySlipperHP.jpg",
+"https://cdn01.pharmeasy.in/dam/banner/banner/0bac91892cd-devices.jpg",
+"https://cdn01.pharmeasy.in/dam/banner/banner/99c6897aa12-MotherHorlicks.jpg",
+"https://cdn01.pharmeasy.in/dam/banner/banner/3b27acda96f-health360.jpg",
+"https://cdn01.pharmeasy.in/dam/banner/banner/88999dde917-final.jpg"];
+
+var labTestHealthConcern=["https://cms-contents.pharmeasy.in/homepage_top_categories_images/fc7cb3e07e2-checkups.png?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/6c5479c6c0c-Vitamins.jpg?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/69588f95674-Diabetes.jpg?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/c507b2563fd-thyroid.png?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/eeb3fe3251f-WomenCare.jpg?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/355e9b77fb5-FeverInfection.jpg?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/6e78a241e48-CovidCare.jpg?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/a953829ca96-Heart.jpg?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/94616a36a9a-Lifestyle.jpg?dim=256x0","https://cms-contents.pharmeasy.in/homepage_top_categories_images/64444851b5e-BoneHealth.jpg?dim=256x0"]
+
+var OfferJustForYou=[
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/efdb30f3981-25_off.jpg?dim=1280x0",
+        "offer":"FLAT 25% OFF + FREE DELIVERY on first 3 medicine orders."
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/2716df7577e-30.jpg?dim=1280x0",
+        "offer":"Flat 30% OFF + FREE DELIVERY on first 3 medicine orders."
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/0b906ff516b-freedel.png?dim=1280x0",
+        "offer":"Get FREE delivery"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/30c8d4a2e82-400x400.png?dim=1280x0",
+        "offer":"Get FLAT Rs.600 OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/c99a64665a6-live_upi.jpg?dim=1280x0",
+        "offer":"Earn rewards up to 1000"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/f98688acf80-1_400x400.png?dim=1280x0",
+        "offer":"But One Get One Free"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/201459ad3a7-citi.jpg?dim=1280x0",
+        "offer":"Up to Rs.600 discount on a minimum transaction of Rs.2000"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/89e9460bf1e-1000.png?dim=1280x0",
+        "offer":"Get FLAT Rs.1200 OFF on booking lab tests above Rs.2998"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/5d08479cec7-CRED.jpg?dim=1280x0",
+        "offer":"Get up to Rs.250 cashback Via CRED Pay UPI"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/d4f76fe7a46-400.png?dim=1280x0",
+        "offer":"Get FLAT Rs.400 OFF on orders above Rs 1499."
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/e11270f3e3f-paytmcashbackoptimized.png?dim=1280x0",
+        "offer":"Up to Rs.400 Cashback on payment via Paytm wallet"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/e11270f3e3f-paytmcashbackoptimized.png?dim=1280x0",
+        "offer":"Get Flat 1000 cashback points on payment via Paytm UPI"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/4922989c113-3_400x400.png?dim=1280x0",
+        "offer":"Buy 2 or more tests and get up to 30% cashback."
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/2fa71127c58-Diagnostics-02-min.png?dim=1280x0",
+        "offer":"Get FLAT Rs.300 cashback on PharmEasy Labtests booked above Rs.999"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/a755d10e494-Diagnostics-01-min.png?dim=1280x0",
+        "offer":"Get FLAT Rs.200 cashback on PharmEasy Labtests booked above Rs.699."
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/5db436ee3cd-1_400x400.png?dim=1280x0",
+        "offer":"Get Flat Rs.50 Cashback on orders above Rs.300."
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/702efbbe2e6-au.jpg?dim=1280x0",
+        "offer":"Flat Rs.150 Off on AU Bank debit and credit card"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/8cdf65ac110-mobiwiklogo.png?dim=1280x0",
+        "offer":"Get up to 650 cashback via Mobikwik. Use code MBK650 on Mobikiwik"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/29e0c8c1469-LOGO_Freecharge%20(1).png?dim=1440x0",
+        "offer":"Flat 10% cashback up to 100, Valid once per user"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/offer/3a9a99e4c87-Contourlogo.jpg?dim=1280x0",
+        "offer":"Get Extra 15% Off upto Rs.300 on Contour Products"
+    }
+]
+
+var shopByCategories=[
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6d462f424a43372ea8b7b6f8ca13e052.png?f=png?dim=256x0",
+        "title":"Covid essentials"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/bde7d1752b5e3cd69f42157f4d578535.png?f=png?dim=256x0",
+        "title":"Mega clearance sale"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/1e622b0308ec3ab48887512eaa3488a5.png?f=png?dim=256x0",
+        "title":"Personal care"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/cfc8ee511609321e91eb86a34f5b2885.png?f=png?dim=256x0",
+        "title":"Healthcare devices"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/335dae76832d370c94f0440f5ba89e1f.png?f=png?dim=256x0",
+        "title":"Health food and drinks"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/dc96175686f135b5a22d1e57165d0246.png?f=png?dim=256x0",
+        "title":"Home care"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/f692f7243b8036ed97d99a7973dd42b3.png?f=png?dim=256x0",
+        "title":"Mother and baby care"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/105ceca515ee30509f93309ae75306aa.png?f=png?dim=256x0",
+        "title":"Diabetic care"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/514d0d7d01a63502b4ebfec9ae26f4d2.png?f=png?dim=256x0",
+        "title":"Fitness supplements"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/154dec0567b23244b7dcbf2158d39eee.png?f=png?dim=256x0",
+        "title":"Skin care"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/d1b29f7a2b5f3d62a3d47b617aceef1b.png?f=png?dim=256x0",
+        "title":"Sexual wellness"
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/discovery/categoryImages/763b558b32313005bc11d0cae0e26f58.png?f=png?dim=256x0",
+        "title":"Accessories & wearables"
+    }
+    
+]
+
+var newLaunches=[
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/R78914/fash-x-gel-face-wash-200ml-2-1670827713.jpg?dim=1280x0",
+        "title":"New Fash X Gel Face Wash 200ml",
+        "mrp":"475.00",
+        "offRate":"361.00",
+        "offer":"24% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+        
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/H98890/liveasy-essentials-paper-cotton-buds-100s-2-1675416986.jpg?dim=1280x0",
+        "title":"Liveasy Essentials Paper Cotton Buds 100s",
+        "mrp":"65.00",
+        "offRate":"44.05",
+        "offer":"10% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+
+    }
+    {
+        "image":"",
+        "title":"Manforce Xotic Condoms (chocolate) 10s",
+        "mrp":"90.00",
+        "offRate":"76.50",
+        "offer":"15% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/G72534/whisper-ultra-soft-air-fresh-xl-plus-sanitary-pads-15-nos-2-1671258850.jpg?dim=1280x0",
+        "title":"Whisper Ultra Soft Air Fresh Xl Plus Sanitary Pads 15 No's",
+        "mrp":"180.00",
+        "offRate":"171.00",
+        "offer":"5% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/E63231/liveasy-herbals-amla-tablets-250mg-2-1645616805.jpg?dim=1280x0",
+        "title":"Liveasy Herbals Amla Tablets (250mg)",
+        "mrp":"165.00",
+        "offRate":"",
+        "offer":""
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/Z08870/pharmeasy-vitamin-c-990mg-with-zinc-10mg-powerful-immunity-booster-60-veg-tablets-2-1672661091.jpg?dim=1280x0",
+        "title":"Pharmeasy Vitamin C (990mg) With Zinc (10mg) - Powerful Immunity Booster - 60 Veg Tablets",
+        "mrp":"799.00",
+        "offRate":"439.45",
+        "offer":"45% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/P20145/desquamar-soap-free-face-cleanser-ph-5-6-for-all-skin-types-100ml-2-1671258700.jpg?dim=1280x0",
+        "title":"Desquamar Soap-free Face Cleanser Ph 5-6 For All Skin Types - 100ml",
+        "mrp":"310.00",
+        "offRate":"288.30",
+        "offer":"7% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/F80687/nicotex-2mg-mint-plus-gums-sugar-free-strip-of-9-pack-of-4-2-1671745141.jpg?dim=1280x0",
+        "title":"Nicotex 2mg Mint Plus Gums Sugar Free Strip Of 9 (pack Of 4)",
+        "mrp":"404.00",
+        "offRate":"343.40",
+        "offer":"15% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/P03437/charmis-moisturising-cold-cream-58-ml-2-1671742979.jpg?dim=1280x0",
+        "title":"Charmis Moisturising Cold Cream- 58 Ml",
+        "mrp":"95.00",
+        "offRate":"92.15",
+        "offer":"3% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/T06623/vicks-zzzquil-natura-10s-chewable-gummies-2-1672054447.jpg?dim=1280x0",
+        "title":"199.00",
+        "mrp":"",
+        "offRate":"",
+        "offer":""
+    }
+]
+
+var trendingNearYou=[
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/021870/bd-ultra-fine-iii-nano-pen-needles-4mm-32g-15-1-1674214391.jpg?dim=1280x0",
+        "title":"BD Ultra-Fine III Nano Pen Needles 4mm 32G 1*5",
+        "mrp":"88.00",
+        "offRate":"76.56",
+        "offer":"13% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1672136925.jpg?dim=1280x0",
+        "title":"Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -helps In Weight Management - 1l",
+        "mrp":"399.00",
+        "offRate":"207.48",
+        "offer":"48% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/000665/accu-chek-active-glucometer-test-strips-box-of-50-1-1669655023.jpg?dim=1280x0",
+        "title":"Accu-chek Active Glucometer Test Strips Box Of 50",
+        "mrp":"1049.00",
+        "offRate":"",
+        "offer":""
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/207833/calcimax-forte-plus-strip-of-30-tablets-2-1671741016.jpg?dim=1280x0",
+        "title":"Calcimax Forte Plus Strip Of 30 Tablets",
+        "mrp":"285.00",
+        "offRate":"245.10",
+        "offer":"14% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/K78780/pharmeasy-pill-box-organizer-2-1669349726.jpg?dim=1280x0",
+        "title":"Pharmeasy Pill Box Organizer",
+        "mrp":"499.00",
+        "offRate":"299.40",
+        "offer":"40% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/266249/depura-60000-iu-vitamin-d3-oral-solution-helps-bones-healthy-aids-in-boosting-immunity-sugarfree-2-1671740957.jpg?dim=1280x0",
+        "title":"Depura 60000 Iu Vitamin D3 Oral Solution Helps Bones Healthy Aids In Boosting Immunity Sugarfree",
+        "mrp":"99.74",
+        "offRate":"86.77",
+        "offer":"13% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/G19614/liveasy-essentials-adhesive-bandages-box-of-100-1-1641791579.jpg?dim=1280x0",
+        "title":"Liveasy Essentials Adhesive Bandages - Box Of 100",
+        "mrp":"199.00",
+        "offRate":"169.15",
+        "offer":"15% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/031531/calcimax-500-health-supplement-tablets-500-mg-of-calcium-box-of-30-2-1671741223.jpg?dim=1280x0",
+        "title":"Calcimax 500 Health Supplement Tablets (500 Mg Of Calcium) Box Of 30",
+        "mrp":"380.00",
+        "offRate":"323.00",
+        "offer":"15% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/149350/refresh-tears-05-bottle-of-10ml-eye-drops-1-1671740741.jpg?dim=1280x0",
+        "title":"Refresh Tears 0.5% Bottle Of 10ml Eye Drops",
+        "mrp":"158.78",
+        "offRate":"",
+        "offer":""
+    }
+]
+
+var wellnessEssenetialOfWeek=[
+    [
+        {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-2-1675775391.jpg?dim=1280x0",
+        "title":"Pharmeasy Multivitamin Multimineral - Immunity Booster - Complete Nutrition - Bottle Of 60",
+        "mrp":"699.00",
+        "offRate":"419.40",
+        "offer":"40% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+        },
+        {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/000665/accu-chek-active-glucometer-test-strips-box-of-50-1-1669655023.jpg?dim=1280x0",
+        "title":"Accu-Chek Active Glucometer Test Strips Box Of 50",
+        "mrp":"1049.00",
+        "offRate":"1049.00",
+        "offer":""
+        }
+    ]
+    [
+        {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/D33314/hansaplast-fixation-tape-5-cm-x-914-cm-2-1647863363.jpg?dim=1280x0",
+        "title":"Hansaplast Fixation Tape 5 Cm X 914 Cm",
+        "mrp":"183.50",
+        "offRate":"93.59",
+        "offer":"49% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+        },
+        {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/071710/evion-400mg-strip-of-10-capsules-2-1671741393.jpg?dim=1280x0",
+        "title":"Evion 400mg Strip Of 10 Capsules",
+        "mrp":"35.90",
+        "offRate":"30.87",
+        "offer":"14% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+        }
+    ]
+    [
+        {
+        "image":"https://cdn01.pharmeasy.in/dam/products/375380/nasivion-classic-adult-nasal-spray-10ml-1-1641536452.jpg?dim=1280x0",
+        "title":"Nasivion Classic Adult Nasal Spray 10ml",
+        "mrp":"99.10",
+        "offRate":"84.23",
+        "offer":"15% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+        },
+        {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/156565/saridon-headache-relief-tablet-strip-of-10-tablets-2-1671741026.jpg?dim=1280x0",
+        "title":"Saridon Headache Relief Tablet- Strip Of 10 Tablets",
+        "mrp":"42.30",
+        "offRate":"38.92",
+        "offer":"8% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+        }
+    ]
+    [
+        {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/O31911/everherb-by-pharmeasy-ashwagandha-immunity-booster-capsules-anxiety-stress-relief-bottle-of-60-2-1661760071.jpg?dim=1440x0",
+        "title":"Everherb (By Pharmeasy) Ashwagandha - Immunity Booster Capsules - Anxiety & Stress Relief - Bottle Of 60",
+        "mrp":"599.00",
+        "offRate":"329.45",
+        "offer":"45% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+        },
+        {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/I47500/hansaplast-spot-bandage-jar-of-50-2-1669711300.jpg?dim=1440x0",
+        "title":"Hansaplast Spot Bandage Jar Of 50",
+        "mrp":"100.00",
+        "offRate":"78.00",
+        "offer":"22% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+        }
+    ]
+]
+
+var featuredBrands=[
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/108df22e1a1-Softovac-min.png?dim=1440x0",
+        "title":"Softovac"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/201210bc27d-App_Huggies.jpg?dim=1440x0",
+        "title":"Huggies"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/9d30cceb5d1-Nestlev2.png?dim=1440x0",
+        "title":"Nestle"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/40facc7fa28-Pharmeasy-App.jpg?dim=1440x0",
+        "title":"Pharmeasy"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/c9fc0cd6ef6-Revital-min.png?dim=1440x0",
+        "title":"Revital"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/a559f294d43-Vicks-min.png?dim=1280x0",
+        "title":"Vicks"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/62668bab7a1-AccuChek-min.png?dim=1280x0",
+        "title":"Accu-Chek"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/e8a5cabe9f3-Volini-min.png?dim=1280x0",
+        "title":"Volini"
+    }
+    {
+        "image":"https://cms-contents.pharmeasy.in/carousel_item/3c344faad99-App_Featured-J.jpg?dim=1280x0",
+        "title":"Johnson's"
+    }
+]
+var middleBanner=["https://cdn01.pharmeasy.in/dam/banner/banner/9b30be687f3-02.jpg?dim=1280x0","https://cdn01.pharmeasy.in/dam/banner/banner/a9ad640ce01-4.jpg?dim=1280x0","https://cdn01.pharmeasy.in/dam/banner/banner/93ef9d6df4f-SLIPPERS.jpg?dim=1280x0","https://cdn01.pharmeasy.in/dam/banner/banner/6e16a38ea89-ORTHO_PEDOC.jpg?dim=1280x0","https://cdn01.pharmeasy.in/dam/banner/banner/6e16a38ea89-ORTHO_PEDOC.jpg?dim=1280x0"]
+var dealsOfTheDay=[
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/080210/friends-easy-adult-diapers-tape-style-high-absorbency-anti-bacterial-core-10-count-l-waist-2953-5709-inch-2-1669655446.jpg?dim=1440x0",
+        "title":"Friends Easy Adult Diapers Tape Style High Absorbency Anti-Bacterial Core 10 Count (L) Waist 29.53- 57.09 Inch",
+        "mrp":"575.00",
+        "offRate":"373.75",
+        "offer":"35% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/O22179/hansaplast-fixation-tape-25-cm-x-914-cm-1-1654250475.jpg?dim=1440x0",
+        "title":"Hansaplast Fixation Tape 2.5 Cm X 914 Cm",
+        "mrp":"91.00",
+        "offRate":"46.41",
+        "offer":"49% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/I09432/neurobion-forte-tablet-30s-1-1669655036.jpg?dim=1440x0",
+        "title":"Neurobion Forte Tablet 30'S",
+        "mrp":"38.10",
+        "offRate":"36.58",
+        "offer":"4% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/W65773/nestle-ceregrow-growing-up-multigrain-cereal-with-milk-fruits-300g-2-1657181899.jpg?dim=1440x0",
+        "title":"Nestle Ceregrow Growing Up Multigrain Cereal With Milk & Fruits - 300g",
+        "mrp":"316.00",
+        "offRate":"306.52",
+        "offer":"3% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/I40513/softovac-sf-constipation-powder-bottle-of-250-g-2-1669710492.jpg?dim=1440x0",
+        "title":"Softovac Sf Constipation Powder Bottle Of 250 G",
+        "mrp":"460.00",
+        "offRate":"331.20",
+        "offer":"28% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/F12885/nestle-nangrow-nutritious-milk-drink-for-growing-children-creamy-vanilla-400g-2-1657181996.jpg?dim=1280x0",
+        "title":"Nestle Nangrow Nutritious Milk Drink For Growing Children Creamy Vanilla 400g",
+        "mrp":"585.00",
+        "offRate":"567.45",
+        "offer":"3% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/X29203/liveasy-ortho-care-acupressure-slippers-men-black-size-10-2-1674619038.jpg?dim=1280x0",
+        "title":"Liveasy Ortho Care Acupressure Slippers - Men (Black) Size 10",
+        "mrp":"599.00",
+        "offRate":"323.46",
+        "offer":"46% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/B78337/dhootapapeshwar-shilapravang-special-30-tablets-2-1671742251.jpg?dim=1280x0",
+        "title":"Dhootapapeshwar Shilapravang Special - 30 Tablets",
+        "mrp":"750.00",
+        "offRate":"675.00",
+        "offer":"10% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+]
+var Spotlight=[
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/L79986/everherb-karela-jamun-juice-helps-maintains-healthy-sugar-levels-helps-in-weight-management-1l-2-1672136925.jpg?dim=256x0",
+        "title":"Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -helps In Weight Management - 1l",
+        "mrp":"399.00",
+        "offRate":"207.48",
+        "offer":"48% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/T22634/liveasy-wellness-calcium-magnesium-vitamin-d3-zinc-bones-dental-health-bottle-60-tabs-2-1661760061.jpg?dim=256x0",
+        "title":"Liveasy Wellness Calcium Magnesium Vitamin D3 & Zinc - Bones & Dental Health - Bottle 60 Tabs",
+        "mrp":"599.00",
+        "offRate":"359.40",
+        "offer":"40% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/G67452/pharmeasy-calcium-magnesium-vitamin-d3-zinc-bones-dental-health-bottle-60-2-1672137118.jpg?dim=256x0",
+        "title":"Pharmeasy Calcium Magnesium Vitamin D3 & Zinc - Bones & Dental Health - Bottle 60",
+        "mrp":"499.00",
+        "offRate":"299.40",
+        "offer":"40% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/Q83701/pharmeasy-all-in-one-vaporizer-1-1654233812.jpg?dim=256x0",
+        "title":"Pharmeasy All-in -one Vaporizer",
+        "mrp":"599.00",
+        "offRate":"269.55",
+        "offer":"55% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/B39499/pharmeasy-hot-water-bag-relieves-pain-relaxes-sore-muscles-improves-blood-supply-blue-2l-2-1671777719.jpg?dim=256x0",
+        "title":"Pharmeasy Hot Water Bag - Relieves Pain - Relaxes Sore Muscles - Improves Blood Supply - Blue - 2l",
+        "mrp":"349.00",
+        "offRate":"300.14",
+        "offer":"14% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-immunity-booster-complete-nutrition-bottle-of-60-2-1675775391.jpg?dim=256x0",
+        "title":"Pharmeasy Multivitamin Multimineral - Immunity Booster - Complete Nutrition - Bottle Of 60",
+        "mrp":"699.00",
+        "offRate":"419.40",
+        "offer":"40% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/E07034/liveasy-wellness-diabetic-protein-blood-sugar-weight-management-french-vanilla-400g-jar-2-1654169670.jpg?dim=256x0",
+        "title":"Liveasy Wellness Diabetic Protein - Blood Sugar &amp; Weight Management -french Vanilla 400g Jar",
+        "mrp":"999.00",
+        "offRate":"559.44",
+        "offer":"44% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+    {
+        "image":"https://cdn01.pharmeasy.in/dam/products_otc/D52223/liveasy-foods-healthy-roasted-seed-mix-blend-of-6-fibre-rich-healthy-roasted-seeds-200-gms-2-1656420865.jpg?dim=256x0",
+        "title":"Liveasy Foods Healthy Roasted Seed Mix - Blend Of 6 Fibre Rich Healthy Roasted Seeds - 200 Gms",
+        "mrp":"399.00",
+        "offRate":"219.45",
+        "offer":"45% OFF",
+        "Q":1,
+        "company": "By Micro Labs",
+    }
+]
+bottomBanner=["https://cdn01.pharmeasy.in/dam/banner/banner/1a3cb756f76-STOCK-CLEARANCE-SALE.jpg?dim=1440x0","https://cdn01.pharmeasy.in/dam/banner/banner/810889b6613-babycare-min.png?dim=1440x0","https://cdn01.pharmeasy.in/dam/banner/banner/5e9dc201ab9-DevicesClearanceStore.jpg?dim=1440x0","https://cdn01.pharmeasy.in/dam/banner/banner/ed87375d79f-DiabeticCare-min.png?dim=1440x0","https://cdn01.pharmeasy.in/dam/banner/banner/ee420d12d95-category_Sexual-wellnes.jpg?dim=1440x0","https://cdn01.pharmeasy.in/dam/banner/banner/ee420d12d95-category_Sexual-wellnes.jpg?dim=1440x0","https://cdn01.pharmeasy.in/dam/banner/banner/03b538c95bb-abcfd6435fe-FragSB.jpeg?dim=1440x0","https://cdn01.pharmeasy.in/dam/banner/banner/041c47e32a2-CB_Beauty.jpg?dim=1440x0","https://cdn01.pharmeasy.in/dam/banner/banner/9b42ab4d9ab-home-page-banner_nutrition-.jpg?dim=1280x0","https://cdn01.pharmeasy.in/dam/banner/banner/9452a363f7f-covid-19.jpg?dim=1280x0"];
+var healthArticles=[
+    {
+        "image":"https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2023/02/06113642/4.jpg?dim=1440x0",
+        "title":"Appendicitis Hospitals in Ahmedabad | PharmEasy Surgicare"
+    }
+    {
+        "image":"https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2023/02/06121930/6.jpg?dim=1440x0",
+        "title":"What is the Cost of Hernia Surgery in Mumbai? | PharmEasy Surgicare"
+    }
+    {
+        "image":"https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2023/02/06115236/blog-vs-1.jpg?dim=1440x0",
+        "title":"Difference Between Piles and Fistula"
+    }
+    {
+        "image":"https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2023/02/06113642/4.jpg?dim=1440x0",
+        "title":"Appendicitis Hospitals in Bangalore | PharmEasy Surgicare"
+    }
+    {
+        "image":"https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2023/02/06113017/5.jpg?dim=1440x0",
+        "title":"Appendicitis Hospitals in Delhi | PharmEasy Surgicare"
+    }
+    {
+        "image":"https://blog-images-1.pharmeasy.in/blog/production/wp-content/uploads/2023/01/31140546/3-6-3.jpg?dim=1440x0",
+        "title":"Difference between Glaucoma vs Cataract | PharmEasy Surgicare"
+    }
+]

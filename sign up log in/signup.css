@@ -22,7 +22,7 @@
         opacity: 0;
         transition: 0s;
     }
-    form{
+    #form{
         padding: 18px;
     }
     .showoverlay{
@@ -40,6 +40,7 @@
         transition: 0s;
         top: 0px; 
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        position: fixed;
     }
     #newlog h3{
         font-size: 20px;
@@ -48,7 +49,7 @@
         margin-bottom: 20px;
     }
     .showlogin{
-        left: 70.5%;
+        left: 73.6%;
     }
     #newlog{
         padding: 20px;
@@ -106,7 +107,7 @@
         padding: 20px;
     }
     span{
-        color: rgb(16,132,126);
+        /* color: rgb(16,132,126); */
     }
     #cross{
         color: black;
