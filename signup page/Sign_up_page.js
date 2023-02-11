@@ -10,11 +10,24 @@ function signUp(event) {
     alert("please enetr 10 digit phone number..!");
     return;
   }
+let user_data = JSON.parse(localStorage.getItem("user-data")) || []
+let c=0;
+user_data.map(function(ele){
+  if(ele.ph == phone){
+   c=1;
+   return;
+  }
+
+})
+if(c==1){
+  alert(`"User is Already registred ,Please try to login"`)
+return;
+}
   localStorage.setItem("login-data",phone)
   var obj = { name: name, mail: email, ph: phone };
   arr.push(obj);
   localStorage.setItem("user-data", JSON.stringify(arr));
-  window.location.assign("/PharmaEasy/Index-page/index.html");
+  window.location.assign("/PharmaEasy/index.html");
   document.getElementById("name").value="";
  document.getElementById("email").value="";
  document.getElementById("number").value="";

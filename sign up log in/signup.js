@@ -41,11 +41,11 @@ function submitForm(event){
         tag.style.textAlign="center"
         tag.style.color="red"
         tag.style.fontSize="20px"
-        if(user == undefined){
+       
             alert("User not found please SignUp....! Redirecting to SignUp page")
            
-            window.location.href="/PharmaEasy/Index-page/signup page/signup.html";
-        }
+            window.location.href="/PharmaEasy/signup page/signup.html";
+        
         // 
     }
     document.getElementById("number").value=""

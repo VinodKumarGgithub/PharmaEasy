@@ -105,7 +105,7 @@ function formS(event){
        let verify = localStorage.getItem("user-number")
        localStorage.setItem("login-data",verify)
      localStorage.setItem("status",true)
-     window.location.assign("/PharmaEasy/Index-page/index.html");
+     window.location.assign("/PharmaEasy/index.html");
      
     }
 }

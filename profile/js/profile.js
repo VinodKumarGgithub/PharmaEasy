@@ -80,13 +80,9 @@ function logOut(){
   let search = JSON.parse(localStorage.getItem("user-data")) || []
   let cart_data = JSON.parse(localStorage.getItem("cart-list")) || []
   let userr = search.map(function(ele){
-  //  if( ph_number == ele.ph){
-  //   alert(ph_number,ele.ph)
-    
-    
-  //  }
+ 
   } )
-  
+  // localStorage.setItem("cart-list",JSON.stringify([]))
   // localStorage.setItem("user-data",JSON.stringify(search))
    localStorage.setItem("status",false)
   localStorage.setItem("login-data","")

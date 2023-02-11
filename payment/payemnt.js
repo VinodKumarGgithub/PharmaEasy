@@ -57,7 +57,7 @@ function onchance(){
 
        if(number.length==12&&date=="12/24"&&cvv==123&&name=="kamal verma"){
         alert(`"Payment successful ☺️", Your 📦 will be deliver soon...!⏳`)
-        window.location.href="/PharmaEasy/Index-page/index.html";
+        window.location.href="/PharmaEasy/index.html";
        }else{
         alert("Invalid detail ❗❗❗")
        }

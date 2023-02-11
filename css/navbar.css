@@ -5,15 +5,18 @@
    justify-content: space-between;
    padding-left: 1px;
    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-   height: 60px;
+   /* height: 80px; */
+   padding:10px 15px;
+   /* border: 1px solid red; */
   }
   #left-nav{
    display: flex;
    justify-content: space-between;
-   width: 24%;
+   width: 30%;
    align-content: center;
    margin-left: 60px;
    /* border: 1px solid red; */
+   margin-top: 10px;
   }
   
   #pincode{
@@ -21,9 +24,10 @@
    border: none;
    font-size: 15px;
    font-weight: 500;
-   margin-top: -10px;
+   margin-top: -20px;
    margin-right: 20px;
    background-color: white;
+   /* border:1px solid red; */
   }
   #left-label{
      display: flex;
@@ -33,10 +37,11 @@
   font-weight : 400;
   line-height: 16px;
   color:rgb(79, 88, 94);
+  margin-top: 10px;
   }
   #left-nav>div{
    width: 180px;
-   font-family: sans-serif;
+ font-family: sans-serif;
   font-size: 14px;
   font-weight : 500;
   line-height: 24px;
@@ -48,21 +53,25 @@
   #logo-line{
      font-family: "Times New Roman";
    font-size: 40px;
-   margin-top: 1px;
+   /* margin-top: 1px; */
    color: #10847e;
+   line-height: 30px;
   }
-  
+  #navbar>#right-nav a{
+   text-decoration: none;
+   color: black;
+ 
+  }
   a{
    text-decoration: none;
    color: black;
   }
   /* right nav */
   #right-nav{
-   display: flex;
+    display: flex;
    align-items: center;
    justify-content: space-between;
    width: 40%;
-   
    /* border: 1px solid red; */
    margin-right:40px ;
   }
@@ -77,7 +86,10 @@
 
   #right-nav>a>p{
    display: flex;
-   align-items: center;
+   align-items: start;
+ }
+ #profile-page>p{
+   margin-bottom: -3px;
  }
 
   div>button{
@@ -94,6 +106,7 @@
 
  #catagory-nav{
  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+ padding-top: 18px;
  }
 #catagory-nav>div{
    width: 60%;
@@ -105,11 +118,43 @@
   font-size: 14px;
   font-weight : 500;
   line-height: 24px;
+ 
 }
-#catagory-nav select{
+/* #catagory-nav select{ */
+#navbar_select{
+  
    border: none;
    font-family: sans-serif;
   font-size: 14px;
   font-weight : 500;
   line-height: 24px;
+  margin-bottom: 14px;
+  /* border: 1px solid black; */
+}
+#under{
+   /* border: 1px solid black; */
+   padding-top: 15px;
+}
+@media only screen and (max-width: 1000px) {
+   /* Medium Screen  */
+   #navbar{
+      /* display: flex; */
+      flex-direction: column;
+   }
+   #right-nav{
+      display: none;
+   }
+   #catagory-nav>div{
+      flex-direction: column;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   /* Small Screen  */
+   #right-nav{
+      display: none;
+   }
+   #catagory-nav>div{
+      display: none;
+   }
 }

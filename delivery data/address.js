@@ -20,14 +20,7 @@ function addreshData(event){
    localStorage.setItem("user-data",JSON.stringify(userdata));
    }
     })
-
-
-
     
-
-
-
-
     document.getElementById("name").value=""
     document.getElementById("number").value=""
     document.getElementById("pinCode").value=""

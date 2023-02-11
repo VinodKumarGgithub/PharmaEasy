@@ -1,4 +1,15 @@
+
+
+document.querySelector("#cart-checkout").addEventListener("click",checkCart)
 var cartArr = JSON.parse(localStorage.getItem("cart-list")) || []
+
+function checkCart(){
+
+  if(cartArr.length>0){
+ 
+    window.location.href="./Delivery_slot.html";
+  }
+}
 displaycart();
 
 function displaycart(){
