@@ -130,7 +130,7 @@
     line-height: 24px;
     color: rgb(79, 88, 94);
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:1200px){
     
     #prod-main{
       display: block;
