@@ -267,6 +267,32 @@
    color:  rgb(48, 54, 60)
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:900px) {
+    body{
+        margin: 0.8%;
+    }
+   #cart-main{
+    padding: 0px;
+    width: 100%;
+    display: block;
+   }
+
+   #cart-main>div:last-child{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+#cart-main>div:first-child{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+#pages{
+    display: flex;
+    justify-content: center;
+}
    
 }

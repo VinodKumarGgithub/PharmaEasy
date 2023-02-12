@@ -12,7 +12,7 @@
   #left-nav{
    display: flex;
    justify-content: space-between;
-   width: 30%;
+   width: 25%;
    align-content: center;
    margin-left: 60px;
    /* border: 1px solid red; */
@@ -71,7 +71,7 @@
     display: flex;
    align-items: center;
    justify-content: space-between;
-   width: 40%;
+   width: 35%;
    /* border: 1px solid red; */
    margin-right:40px ;
   }
@@ -154,9 +154,7 @@
 
 @media only screen and (max-width: 600px) {
    /* Small Screen  */
-   #right-nav{
-      display: none;
-   }
+ 
    #catagory-nav>div{
       display: none;
    }

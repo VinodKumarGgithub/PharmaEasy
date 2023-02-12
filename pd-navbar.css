@@ -136,22 +136,22 @@
    /* Medium Screen  */
    #navbar{
       /* display: flex; */
-      flex-direction: column;
+     
+
    }
-   #right-nav{
+   #right-nav button{
       display: none;
    }
-   #catagory-nav>div{
-      flex-direction: column;
+   #catagory-nav{
+      display: none;
    }
+   
 }
 
 @media only screen and (max-width: 600px) {
    /* Small Screen  */
-   #right-nav{
-      display: none;
-   }
-   #catagory-nav>div{
+ 
+   #catagory-nav {
       display: none;
    }
 }
