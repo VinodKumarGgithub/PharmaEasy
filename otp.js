@@ -4,10 +4,6 @@ console.log(val);
 
 alert(`Your 4 Digit OTP is "${val}"`)
 
-
-
-
-console.log("hi....")
 var userNum=JSON.parse(localStorage.getItem("user-number"));
 document.getElementById("number_or").textContent="+91 "+ userNum;
 
@@ -28,17 +24,8 @@ function closepopup(){
     document.querySelector(".success").classList.remove("showSuccess");
 var otp=JSON.parse(localStorage.getItem("otp"));
 var no =JSON.parse(localStorage.getItem("user-number"));
-// console.log(otp,Userotp)
-
-// document.querySelector("#number-or").textContent=  no
-
     if(otp==val){
         let num =JSON.parse(localStorage.getItem("login-data")) || ""
-        // document.querySelector("#number-or").textContent= "+91 " + no
-       
-        // document.getElementById("name-display").textContent = elm.name;
-        // document.querySelector("#name-display").setAttribute("href","/PharmaEasy/profile/profile.html")
-        
            
     }
 }

@@ -118,13 +118,14 @@
    /* Medium Screen  */
    #navbar{
       /* display: flex; */
-      flex-direction: column;
+      /* flex-direction: column; */
    }
-   #right-nav{
+   #right-nav>a:first-child{
       display: none;
    }
    #catagory-nav>div{
-      flex-direction: column;
+      /* flex-direction: column; */
+      display: none;
    }
 }
 
