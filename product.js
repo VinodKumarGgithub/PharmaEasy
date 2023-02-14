@@ -355,6 +355,7 @@ var dealsOfTheDay=[
     }
 ]
 var Spotlight=[
+    
     {
         "image":"https://th.bing.com/th/id/OIP.IetBJ538dDmLdX-sh0V-8QHaHa?w=180&h=180&c=7&r=0&o=5&dpr=1.4&pid=1.7",
         "title":"Everherb Karela Jamun Juice - Helps Maintains Healthy Sugar Levels -helps In Weight Management - 1l",
@@ -471,6 +472,12 @@ if(ele.ph == user_number )
 document.getElementById("name-display").textContent = ele.name;
 // document.getElementById("name").innerText = ele.name ;
 // document.getElementById("name-l").textContent = ele.name[0] ;
+let cart = JSON.parse(localStorage.getItem("cart-list")) || ""
+if(cart.length!=0)
+  document.getElementById("count-item").textContent= cart.length
+  else
+  document.getElementById("count-item").textContent= ""
+
 })
 
 

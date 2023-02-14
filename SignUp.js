@@ -23,7 +23,7 @@ if(c==1){
   alert(`"User is Already registred ,Please try to login"`)
 return;
 }
-  localStorage.setItem("login-data",phone)
+  // localStorage.setItem("login-data",phone)
   var obj = { name: name, mail: email, ph: phone };
   arr.push(obj);
   localStorage.setItem("user-data", JSON.stringify(arr));

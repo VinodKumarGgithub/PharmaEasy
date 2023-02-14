@@ -7,6 +7,15 @@
    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
    height: 60px;
   }
+  #count-item{
+   color:white;
+   background-color:#f47779;
+   padding:0px 7px;
+   border-radius: 100%;
+   font-size: 9px;
+   margin-left: -9px;
+   margin-top: -9px;
+  }
   #left-nav{
    display: flex;
    justify-content: space-between;

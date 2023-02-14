@@ -6,33 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://th.bing.com/th/id/OIP.DqVB4D6lzRrFMTMGdTrHUgHaHa?pid=ImgDet&w=187&h=187&c=7&dpr=1.4">
     <title> PharmEasy: Online Pharmacy & Medical Store in India | 50 Lakhs+ Customers.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
    <link rel="stylesheet" href="./index_footr.css">
    <link rel="stylesheet" href="./index_navbar.css">
-   <!-- <link rel="stylesheet" href="/PharmaEasy/bst.css"> -->
    <link rel="stylesheet" href="./Login.css">
+   <link rel="stylesheet" href="./index.css">
+
    
-
-   <!-- <link rel="stylesheet" href="/PharmaEasy/sign up log in/otp.js"> -->
-  
- 
-    <!-- icon link -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="./index_swiper-bundle.min.css" />
-
-    <!-- slider Css-->
-    <link rel="stylesheet" href="./index_slider.css" />
-    <!-- bootstrap link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
 </head>
 <body>
   <!-- Nav bar -->
@@ -55,12 +34,12 @@
             <a href="" id="profile-page"><p><img src="./navbar icons/profile.svg" alt=""><span id="name-display"><span onclick="showpopUp()"  id="name-display-1">Hello, log in</span> </span></p></a>
 
             <a href="./Products.html" id="under"><p><img src="./navbar icons/offer.svg" alt=""><span> Offers</span></p></a>
-            <a href="./cart.html" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span>Cart</span> </p></a>
+            <a href="./cart.html" id="under"><p><img src="./navbar icons/cart.svg" alt=""><span id="count-item"></span><span>Cart</span> </p></a>
         </div>
     </div>
     <div id="catagory-nav">
         <div>
-       <a href="./Products.html" style="text-decoration: none; color: black;"><p>Medicine</p></a> 
+       <a href="./Products.html"><p>Medicine</p></a> 
         <p>Lab Tests</p>
         <select name="" id="navbar_select">
             <option value="">Healthcare</option>
@@ -73,372 +52,319 @@
         <p>Value Store</p>
     </div>
     </div>     
-
-
-    <div id="firstDiv" >
-        <div
-          id="label1"
-          class="d-lg-flex justify-content-around font-weigth-bold p-5"
-        >
-          <div><h4>What are you looking for?</h4></div>
-          <div class="p-3">
-            <i class="bi bi-file-text"></i>
-            <span>Order with prescription.</span>
-            <span class="text-success fw-bolder">UPLOAD NOW</span>
-            <i class="bi bi-chevron-right"></i>
-          </div>
-        </div>
-        <div
-          id="search"
-          class="container rounded-pill text-bg-light text-center border border-black"
-        >
-          <form>
-            <div class="input-group d-flex align-items-center">
-              <i class="bi bi-search"></i>
-              <p class="text-center align-content-center m-2">Search for</p>
-              <input id="searchIp" type="text" class="form-control" />
-              <button id="Sbtn" class="btn btn-success rounded-pill mt-1">
-                Search
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-  
-     
-      <!-- Top Banner -->
-      <div id="Banner"> 
-         <div class="swiper"> 
-          <div class="slide-container">
-            <div id="Box1" class="card-wrapper swiper-wrapper">
-              <!-- appending card here -->
-            </div>
-          </div>
-          <div class="swiper-button-next swiper-navBtn"></div>
-          <div class="swiper-button-prev swiper-navBtn"></div>
-          <div class="swiper-pagination"></div> 
-         </div> 
-      </div>
-
-       
- <!-- New Launches --> 
- <div id="NewLanunches">
-  <h1>Previously Browsed Items</h1>
-    <p>New wellness range just for you!</p>
-    <div id="newLanchCard" class="d-flex m-4">
-      <!-- appending here -->
-      
-    </div>
-      
-  
-</div>
-         
-
-      <!-- Lab Tests by Health Concern -->
-      <div>
-        <div><h1 class="fs-4">Lab Tests by Health Concern</h1></div>
-      </div>
-      <!-- prescription upload -->
-      <div id="prescrption" class="d-lg-flex mt-5 mb-5 rounded-3">
-        <!-- left part -->
-        <div class="d-lg-flex align-items-center">
-          <div>
-            <img
-              src="https://assets.pharmeasy.in/apothecary/images/rx_upload.svg?dim=1440x0"
-              alt="prescription"
-            />
-          </div>
-          <div>
-            <p class="fs-6 fw-bold mb-1">Order with Prescription</p>
-            <p>Upload prescription and we will deliver your medicines</p>
-            <div class="text-light fw-bold p-2 rounded-1">
-              <i class="bi bi-paperclip"></i> <span>Upload</span>
-            </div>
-          </div>
-        </div>
-        <!-- right part -->
+   <!-- main body -->
+<!-- top -->
+   <div id="top-box">
+    <!-- 1st -->
+      <div id="top-1">
         <div>
-          <span>How does this work?</span>
-          <div class="d-flex">
-            <div>
-              <div class="d-flex">
-                <span>1</span>
-                <p>Upload a photo of your prescription</p>
-              </div>
-              <div class="d-flex">
-                <span>2</span>
-                <p>Add delivery address and place the order</p>
-              </div>
-            </div>
-            <div>
-              <div class="d-flex">
-                <span>3</span>
-                <p>We will call you to confirm the medicines</p>
-              </div>
-              <div class="d-flex">
-                <span>4</span>
-                <p>
-                  Now, sit back! your medicines will get delivered at your
-                  doorstep
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- become a plus member  -->
-      <div id="plusMember" class="d-sm-flex flex-column">
-        <div class="d-lg-flex justify-content-around">
-          <!-- left -->
-          <div>
-            <div>
-              <span>
-                Become a member
-                <i class="bi bi-plus"></i>
-                <span>Plus</span>
-                member
-              </span>
-            </div>
-  
-            <div><span>And enjoy extra bachat on every order</span></div>
-            <div>
-              <hr />
-            </div>
-          </div>
-          <!-- right -->
-          <div >
-            <div>
-              <p>
-                Save 5% on allopathic medicines, 50% on lab tests & get FREE
-                delivery with PLUS membership Know more >
-              </p>
-            </div>
-            <div class="d-flex justify-content-between ">
-              <div class="text-light fw-bold p-2 rounded-2">
-                <span>Explore Now </span
-                ><i class="bi bi-arrow-right-circle-fill"></i>
-              </div>
-              <div>
-                <img src="https://assets.pharmeasy.in/apothecary/_next/static/media/PlusFamily.22677720.png?dim=1280x0" alt="">
-              </div>
-             
-            </div>
-            
-          </div>
-          
-        </div>
-      </div>
-  
-      <!-- shop by concern -->
-      <div class="m-5">
-        <h3 class="fw-bold">Shop by Concern</h3>
-        <p class="text-secondary ">Products are handpicked by experts</p>
-        <div class="d-lg-flex gap-5 ">
-          <div class="card border-0" >
-            <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/923a665cc6f-Skin_care.png?dim=128x0" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center fs-6 fw-bold">Skin Care</h5>
-              
-            </div>
-          </div>
-          <div class="card  border-0" >
-            <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/18d2e2ee86b-Vitamins.png?dim=128x0" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center fs-6 fw-bold">Vitamins</h5>
-              
-            </div>
-          </div>
-          <div class="card  border-0" >
-            <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/0af9ac9f350-Diabetes.webp?dim=128x0" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center fs-6 fw-bold">Diabetes Care & Sugar Substitutes</h5>
-              
-            </div>
-          </div>
-          <div class="card  border-0" >
-            <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/24a0d2c733e-Heart.webp?dim=128x0" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center fs-6 fw-bold">Cardiac Care</h5>
-              
-            </div>
-          </div>
-          
-          <div class="card  border-0" >
-            <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/68369c9df98-Pregnancy.webp?dim=128x0" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center fs-6 fw-bold">Baby & Mom Care</h5>
-              
-            </div>
-          </div>
-          <div class="card  border-0" >
-            <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/16ab65c0826-Covid.webp?dim=128x0" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center fs-6 fw-bold">Covid Care</h5>
-              
-            </div>
-          </div>
-          <div class="card  border-0" >
-            <img src="https://cms-contents.pharmeasy.in/homepage_top_categories_images/26bbd7a9e98-Lifestyle.webp?dim=128x0" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-center fs-6 fw-bold">Life</h5>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Frequently Booked Lab Tests -->
-      <div id="fbLab">
-        <div class="d-flex justify-content-between  " style="margin:3% 1%;">
-          <h3 class="text-dark fw-bold">Frequently Booked Lab Tests</h3>
-          <p class="text-success fw-bold">View All</p>
-        </div>
-        <div class="d-lg-flex justify-content-between d-sm-block"  style=" padding: 50px;">
-          <div  >
-            
-            <p class="btn btn-danger" >63% OFF</p>
-            <p class="">Comprehensive Full Body Checkup with Vitamin D & B12</p>
-            <p class="">Measures Vitamin D & B12 levels and other essential parameters</p>
-          
-            <div class="d-flex justify-content-between" >
-              <div >
-                <p class="text-decoration-line-through fw-bold text-secondary">₹ 4199</p>
-                <p class="fw-bold fs-4 ">₹ 1549</p>
-              </div>
-              <div><img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/production/recommendationWidget/7e6ed82a2c373d1db2ea81a09e2fbb4c.png?dim=96x0" alt="lab test"></div>
-            </div>
-          </div>
-          <div >
-            
-            <p class="btn btn-danger">65% OFF</p>
-            <p class="">Healthy 2023 Full Body Checkup</p>
-            <p class="">Diagnostic tool for screening and monitoring of your health</p>
-          
-            <div class="d-flex justify-content-between" >
-              <div>
-                <p class="text-decoration-line-through fw-bold text-secondary">₹ 2990</p>
-                <p class="fw-bold fs-4">₹ 1049</p>
-              </div>
-              <div><img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/production/recommendationWidget/8fcec926bf37309bbf6cec04e6684ba1.png?dim=96x0" alt="lab test"></div>
-            </div>
-          </div>
-          <div >
-            
-            <p class="btn btn-danger">55% OFF</p>
-            <p class="">Diabetes Care</p>
-            <p class="">Specially designed package to cover the preventive care aspects for diabetics</p>
-          
-            <div class="d-flex justify-content-between">
-              <div>
-                <p class="text-decoration-line-through fw-bold text-secondary">₹ 1099</p>
-                <p class="fw-bold fs-4">₹ 499</p>
-              </div>
-              <div><img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/production/recommendationWidget/d07ea9125803379885f61b6c72ffd811.png?dim=96x0" alt="lab test"></div>
-            </div>
-          </div>
-          <div >
-            
-            <p class="btn btn-danger">62% OFF</p>
-            <p class=""><span class="c-kkmdlQ c-kkmdlQ-jxPRpY-structure-subTitle2 c-kkmdlQ-jdOIsX-weight-semiBold c-kkmdlQ-dkBcwO-structure-title8 c-kkmdlQ-ieyuyIM-css">Basic Health Checkup</span></p>
-            <p class="">Assesses health of 47 essential body parameters</p>
-          
-            <div class="d-flex justify-content-between">
-              <div>
-                <p class="text-decoration-line-through fw-bold text-secondary">₹ 2050</p>
-                <p class="fw-bold fs-4">₹ 775</p>
-              </div>
-              <div><img src="https://s3.ap-south-1.amazonaws.com/pe-neon-public/diagnostics/production/recommendationWidget/01abb07c5b233f90b2cd0b64a7ebccee.png?dim=96x0" alt="lab test"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Middle banner  -->
-
-      <div id="Banner"> 
-        <div class="swiper"> 
-         <div class="slide-container">
-           <div id="Box2" class="card-wrapper swiper-wrapper">
-             appending card here
-            </div>
+         <h2>What are you looking for ?</h2>
+        <p> <img src="./index icons/text page.svg" alt="">Order with prescription. <span>UPLOAD NOW ></span></p>
          </div>
-         <div class="swiper-button-next swiper-navBtn"></div>
-         <div class="swiper-button-prev swiper-navBtn"></div>
-         <div class="swiper-pagination"></div> 
-        </div> 
+         <div id="search-box">
+           <button><img src="./index icons/search.svg" alt=""></button>
+           <input type="search"  placeholder="Search Medicines">
+           <button ><span>Search</span> </button>
+         </div>
+      </div>
+
+     <div id="top-cat-box">
+       <div id="top-boxes">
+        <div>
+          <img src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt="">
+          <h5>Medicine</h5>
+          <h6>UPTO 20%OFF</h6>
+        </div>
+        <div>
+          <img src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0" alt="">
+          <h5>Lab Tests</h5>
+          <h6>UPTO 70%OFF</h6>
+        </div>
+        <div>
+          <img src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="">
+          <h5>Healthcare</h5>
+          <h6>UPTO 60%OFF</h6>
+        </div>
+        <div>
+          <img src="https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0" alt="">
+          <h5>Surgeries</h5>
+          <h6></h6>
+        </div>
+        <div>
+          <img src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0" alt="">
+          <h5></h5>
+          <h6></h6>
+        </div>
+        <div>
+          <img src="https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0" alt="">
+          <h5>PLUS</h5>
+          <h6>SAVE 5% EXTRA</h6>
+        </div>
+        <div>
+          <img src="https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0" alt="">
+          <h5>Offers</h5>
+          <h6></h6>
+        </div>
+        <div>
+          <img src="https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0" alt="">
+          <h5>Value Store</h5>
+          <h6>UPTO 50% OFF</h6>
+        </div>
+       </div>
      </div>
+   </div>
 
-<!-- Bottom banner  -->
 
-<div id="Banner" > 
-  <div class="swiper"> 
-   <div class="slide-container" >
-     <div id="Box3" class="card-wrapper swiper-wrapper" >
-       appending card here
+   <!-- Shop by Categories -->
+   <h1>Shop by Categories </h1>
+   <div id="shop-cat">
+    
+    <div>
+      <img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/8a45f5baa68e3b72ae631003faa97bdb.png?f=png?dim=256x0" alt="">
+      <p>Beauty</p>
+    </div>
+    <div>
+      <a href="./Products.html"><img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/68ae87e29f4a3abbb8ed69fe7ecf057c.png?f=png?dim=256x0" alt=""></a>
+      <p>Home care</p>
+    </div>
+    <div>
+      <a href="./Products.html"><img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/e17c6d96de443b65988f5b2366b6ebb1.png?f=png?dim=256x0" alt=""></a>
+      <p>Healthcare</p>
+    </div>
+    <div>
+      <a href="./Products.html"><img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/6d462f424a43372ea8b7b6f8ca13e052.png?f=png?dim=256x0" alt=""></a>
+      <p>Covid essentials</p>
+    </div>
+    <div>
+      <a href="./Products.html"><img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/b4a3a67a59783e0ca738884c9acc8e7b.png?f=png?dim=256x0" alt=""></a>
+      <p>Personal care</p>
+    </div>
+    <div>
+      <a href="./Products.html"><img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/62e6d7551ecf3a5da1d2336c41cc0549.png?f=png?dim=256x0" alt=""></a>
+      <p>Health food and drinks</p>
+    </div>
+    <div>
+      <a href="./Products.html"><img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/ff5aaa03881e3016bf409f85b4e328aa.png?f=png?dim=256x0" alt=""></a>
+      <p>Skin care</p>
+    </div>
+    <div>
+      <a href="./Products.html"><img src="https://cdn01.pharmeasy.in/dam/discovery/categoryImages/4209e1d247cd30fca1f619786fa3e9c1.png?f=png?dim=256x0" alt=""></a>
+      <p>Ayurvedic</p>
+    </div>
+   </div>
+ 
+   <!-- Frequently Booked Lab Tests -->
+   <h1>Frequently Booked Lab Tests</h1>
+   <div id="f-labtest">
+
+       <div>
+           <h3>60%OFF</h3>
+          <h3>Post Prandial Blood Sugar (PPBS)</h3>
+         <p>Measures your blood sugar levels after last meal</p>
+        <div>
+          <div>
+            <p>₹500</p>
+            <p>₹199</p>
+         </div>
+         <div><img src="./index icons/lab.png" alt=""></div>
+      </div>
+    </div>
+
+   <div>
+    <h3>64%OFF</h3>
+    <h3>Comprehensive Full Body Checkup with Vitamin D & B12</h3>
+    <p>Measures Vitamin D & B12 levels and other essential parametersl</p>
+    <div id="lab-img-mrp">
+      <div>
+        <p>₹4199</p>
+        <p>₹1499</p>
+      </div>
+      <div><img src="./index icons/lab-with-patient.png" alt=""></div>
+   </div >
+  </div>
+
+   <div>
+    <h3>33%OFF</h3>
+    <h3>HbA1c (Glycosylated Hemoglobin)</h3>
+    <p>Gives avg. sugar levels of 3 months to monitor diabetes</p>
+    <div id="lab-img-mrp">
+      <div>
+        <p>₹600</p>
+        <p>₹399</p>
+      </div>
+      <div><img src="./index icons/lab-with-patient.png" alt=""></div>
+   </div>
+ </div>
+
+    <div>
+        <h3>59%OFF</h3>
+         <h3>Women's Master Checkup with Cancer & Arthritis Screening</h3>
+         <p>Measures Vitamins, Arthritis & Cancer screening and other essential parameters</p>
+       <div id="lab-img-mrp">
+          <div>
+            <p>₹4990</p>
+            <p>₹1999</p>
+          </div>
+          <div><img src="./index icons/lab.png" alt=""></div>
       </div>
    </div>
-   <div class="swiper-button-next swiper-navBtn"></div>
-   <div class="swiper-button-prev swiper-navBtn"></div>
-   <div class="swiper-pagination"></div> 
-  </div> 
-</div>
+  </div>
 
-
-      <!--Why Choose Us -->
-      <div id="chooseUs" style=" padding: 60px;">
-        <h3 class="fw-bold">Why Choose Us?</h3>
-        <div class="d-lg-flex d-sm-block gap-5">
-          <div class="d-flex">
-            <img src="https://assets.pharmeasy.in/apothecary/images/family.svg?dim=96x0" alt="">
-            <div>
-              <span> 32 Million+</span>
-              <p>Registered users as of Mar 31, 2022</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <img src="https://assets.pharmeasy.in/apothecary/images/deliveryBoy.svg?dim=96x0" alt="">
-            <div>
-              <span> 36 Million+</span>
-              <p>Orders on Pharmeasy till date </p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <img src="https://assets.pharmeasy.in/apothecary/images/pincodeServed.svg?dim=96x0" alt="">
-            <div>
-              <span> 99000+</span>
-              <p>Unique items sold last 3 months</p>
-            </div>
-          </div>
-          <div class="d-flex">
-            <img src="https://assets.pharmeasy.in/apothecary/images/locationMarker.svg?dim=96x0" alt="">
-            <div>
-              <span> 19500+</span>
-              <p>Pin codes serviced last 3 months</p>
-            </div>
-          </div>
-        </div>
-      </div>
-     <!-- footer banner -->
-      <div id="footerBanner">
+    <!--Featured Brands  -->
+  <h1>Featured Brands</h1>
+  <p>Pick from our favourite brands</p>
+  <div id="feature-brand">
         <div>
-          <div>
-            <h1 class="text-black fw-bold text-center" style=" padding: 10px;">Simplifying Healthcare Impacting Lives</h1>
-              <p class="text-center fw-bold" style="padding: 5px;">Download the App for Free</p>
-              <div class="d-flex justify-content-center" style=" margin-bottom: 50px;">
-                <div><img src="https://assets.pharmeasy.in/apothecary/images/googlePlay.svg?dim=256x0" alt="" style=" width: 255px; padding-right: 30px;"></div>
-                <div><img src="https://assets.pharmeasy.in/apothecary/images/appStore.svg?dim=256x0" alt=""  style=" width:240px; height: 68px; padding-right: 30px;"></div>
-              </div>
-          </div>
+          <img src="https://cms-contents.pharmeasy.in/carousel_item/e642f1b8237-Glucon_D.jpg?dim=1440x0" alt="">
+          <p>Glucon-D</p>
         </div>
+
+        <div>
+          <img src="https://cms-contents.pharmeasy.in/carousel_item/3eb4eb6bfbe-App_Himalaya.jpg?dim=1440x0" alt="">
+          <p>Himalaya</p>
+        </div>
+
+        <div>
+          <img src="https://cms-contents.pharmeasy.in/carousel_item/1466c422fcd-Sugerfree.png?dim=1440x0" alt="">
+          <p>Sugerfree</p>
+        </div>
+        <div>
+          <img src="https://cms-contents.pharmeasy.in/carousel_item/1151b7d7c0e-LivEasy-min.png?dim=1440x0" alt="">
+          <p>LiveEasy</p>
+        </div>
+        <div>
+          <img src="https://cms-contents.pharmeasy.in/carousel_item/201210bc27d-App_Huggies.jpg?dim=1440x0" alt="">
+          <p>Huggies</p>
+        </div>
+        <div>
+          <img src="https://cms-contents.pharmeasy.in/carousel_item/d6726e69b22-04.jpg?dim=1440x0" alt="">
+          <p>Wellbeing Nutrition</p>
+        </div>
+        <div>
+          <img src="https://cms-contents.pharmeasy.in/carousel_item/c9fc0cd6ef6-Revital-min.png?dim=1440x0" alt="">
+          <p>revital</p>
+        </div>
+  </div>
+
+  <!-- Deals of the Day -->
+   <h1>Deals of the Day</h1>
+   <a href="./Products.html">
+   <div id="deal-ofday">
+       <div>
+        <div>
+        <img src="https://cdn01.pharmeasy.in/dam/products_otc/I48459/sirona-feminine-cramp-relief-patch-packet-of-5-s-2-1641788205.jpg?dim=1440x0" alt="">
+      </div> 
+        <p> Sirona Feminine Cramp Relief Patch Packet Of...</p>
+        <p id="mrp-i">MRP <span>₹249.00</span> </p>
+          
+          <div>
+            <p>₹224.1 </p>
+            <p>10% OFF</p>
+          </div>
+       </div>
+       <div>
+        <div>
+        <img src="https://cdn01.pharmeasy.in/dam/products_otc/105920/himalaya-liv52-tablets-100s-2-1654078567.jpg?dim=1440x0" alt="">
+      </div> 
+        <p>Himalaya Liv.52 Tablets - 100's</p>
+        <p id="mrp-i">MRP <span>₹130.00</span> </p>
+          <div>
+            <p>₹104</p>
+            <p> 20% OFF</p>
+          </div>
+       </div>
+       <div>
+        <div>
+        <img src="https://cdn01.pharmeasy.in/dam/products_otc/J51815/liveasy-wellness-apple-cider-vinegar-with-mother-improves-metabolism-500ml-bottle-2-1654165611.jpg?dim=1440x0" alt="">
+      </div>  
+        <p>Liveasy Wellness Apple Cider Vinegar With...</p>
+        <p id="mrp-i">MRP <span>₹649.000</span> </p>
+          <div>
+            <p>₹227.15</p>
+            <p>65% OFF</p>
+          </div>
+       </div>
+       <div>
+        <div>
+        <img src="https://cdn01.pharmeasy.in/dam/products_otc/I00596/revital-h-women-multivitamin-with-calcium-zinc-ginseng-for-immunity-strong-bones-energy-30-tablets-1-1654168794.jpg?dim=1440x0" alt="">
       </div>
-  
-  
+        <p>Revital H Women Multivitamin With...</p>
+        <p id="mrp-i">MRP <span>₹345.00</span> </p>
+          <div>
+            <p>₹293.25</p>
+            <p>15% OFF</p>
+          </div>
+       </div>
+       <div>
+        <div>
+        <img src="https://cdn01.pharmeasy.in/dam/products_otc/183157/volini-pain-relief-gel-tube-of-75-g-1-1654078754.jpg?dim=1440x0" alt="">
+      </div>
+        <p>Volini Pain Relief Gel Tube Of 75 G</p>
+        <p id="mrp-i">MRP <span>₹245.00</span> </p>
+          
+          <div>
+            <p>₹208.25</p>
+            <p>15% OFF</p>
+          </div>
+       </div>
+       <div>
+        <div>
+        <img src="https://cdn01.pharmeasy.in/dam/products_otc/071710/evion-400mg-strip-of-10-capsules-2-1656662057.jpg?dim=1440x0" alt="">
+      </div>  
+        <p>Evion 400mg Strip Of 10 Capsules</p>
+        <p id="mrp-i">MRP <span>₹35.90</span> </p>
+          <div>
+            <p>₹71.46</p>
+            <p>10% OFF</p>
+          </div>
+       </div>
+       <div>
+        <div>
+        <img src="https://cdn01.pharmeasy.in/dam/products_otc/I32380/livogen-z-captab-15s-2-1656662098.jpg?dim=1440x0" alt="">
+      </div> 
+        <p>Livogen Z Captab 15's</p>
+          <p id="mrp-i">MRP <span>₹79.40</span> </p>
+          <div>
+            <p>₹71.46</p>
+            <p> 10% OFF</p>
+          </div>
+       </div>
+   </div></a>
+
+<!-- Health Articles -->
+<h1>Health Articles</h1>
+<p>Get up-to-date on our latest health updates</p>
+  <div id="yoga-box">
+    <div>
+      <img src="https://blog-images.pharmeasy.in/2022/09/29124727/19.jpg?dim=1440x0" alt="">
+      <p>Benefits of Sudarshan Kriya and How to Do it By Dr. Ankit Sankhe</p>
+    </div>
+    <div>
+      <img src="https://blog-images.pharmeasy.in/2022/09/29121435/11.jpg?dim=1440x0" alt="">
+      <p>Benefits of Bhastrika Pranayama and How to Do it By Dr. Ankit Sankhe</p>
+    </div>
+    <div>
+      <img src="https://blog-images.pharmeasy.in/2022/09/29120043/9.jpg?dim=1440x0" alt="">
+      <p>Benefits of Ustrasana (Camel Pose) and How to Do it By Dr. Ankit Sankhe</p>
+    </div>
+    <div>
+      <img src="https://blog-images.pharmeasy.in/2022/09/29115156/20.jpg?dim=1440x0" alt="">
+      <p>Benefits of Gomukhasana (Cow Face Pose) and How to Do it By Dr. Himani</p>
+    </div>
+    <div>
+      <img src="https://blog-images.pharmeasy.in/2022/09/28202427/10.jpg?dim=1440x0" alt="">
+      <p>Benefits of Bhramari Pranayama and How to Do it By Dr. Himani Bisht</p>
+    </div>
+  </div>
+
+  <div id="img-bottom">
+    <img src="https://i.postimg.cc/HxTwb400/Screenshot-2022-07-22-at-1-14-36-AM.png" alt="">
+   </div>
       <!-- bottom details -->
       <div id="bottomDetails" style="padding: 30px; color: rgb(79, 88, 94);">
         <div>
           <div>
-            <p style="color: rgb(79, 88, 94);"><span>Top-Selling Healthcare Products:</span>Accu-Chek Active - 100 Strips
+            <p style="color: rgb(79, 88, 94);"><span id="why">Top-Selling Healthcare Products:</span>Accu-Chek Active - 100 Strips
               |
               Supradyn Multivitamin Tablets
               |
@@ -457,9 +383,9 @@
               Pediasure Premium Chocolate Refill
             </p>
          </div>
-  
+        
          <div>
-          <p style="color: rgb(79, 88, 94);"><span >Top-Selling Medicines:</span>
+          <p style="color: rgb(79, 88, 94);"><span id="why" >Top-Selling Medicines:</span>
             Dolovera Gel
             |
             Neurobion Forte
@@ -496,7 +422,7 @@
          </div>
   
          <div>
-          <p style="color: rgb(79, 88, 94);"><span>COVID-19 Preventatives:</span>
+          <p style="color: rgb(79, 88, 94);"><span id="why">COVID-19 Preventatives:</span>
             N95 Masks
             |
             Hand Sanitizers
@@ -504,7 +430,7 @@
             Hand Gloves, Disinfectants, Thermometers & more!</p>
          </div>
          <div>
-          <p style="color: rgb(79, 88, 94);"><span>Surgeries we cover:</span>
+          <p style="color: rgb(79, 88, 94);"><span id="why">Surgeries we cover:</span>
             Piles
             |
             Fistula
@@ -548,7 +474,7 @@
             <span class="fs-6">Your One-Stop Online Pharmacy - PharmEasy</span>
           </p>
          </div>
-         <div>
+         <div id="bottom-des">
             <p>
               <span>We've got India Covered!</span>
             </p>
@@ -693,8 +619,6 @@
      </div>
     </div>
      
-    <script src="./swiper-bundle.min.js"></script>
-    <script src="./script.js"></script>
     <script src="./index.js"></script>
 
     <div class="overlay"></div>
@@ -705,7 +629,6 @@
             <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="">
             <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg?dim=256x0" alt="">
         </div>
-        <!-- <a href="./OTP.html">clickkkkk</a>  /PharmaEasy/sign up log in/OTP.html-->
         <form action=" /PharmaEasy/sign up log in/OTP.html" id="form">
            
             <div>
@@ -729,17 +652,8 @@
 
 </body>
 </html>
-<!-- <script src="/PharmaEasy/sign up log in/otp.js"></script> -->
 <script src="./Login.js"></script>
-<!-- <script src="/PharmaEasy/sign up log in/OTP.js"></script> -->
-<!-- <script src="/PharmaEasy/sign up log in/otp.js"></script> -->
 
 </body>
 </html>
 
-
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-crossorigin="anonymous"
-></script>

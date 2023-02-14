@@ -16,6 +16,12 @@ userArr.map(function(ele,index){
 console.log(ele)
 if(ele.ph == user_number )
 document.getElementById("name-display").textContent = ele.name;
+let cart = JSON.parse(localStorage.getItem("cart-list")) || ""
+if(cart.length!=0)
+  document.getElementById("count-item").textContent= cart.length
+  else
+  document.getElementById("count-item").textContent= ""
+
 })
 
 }

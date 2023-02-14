@@ -4,7 +4,7 @@ console.log(val);
 
 alert(`Your 4 Digit OTP is "${val}"`)
 
-var userNum=JSON.parse(localStorage.getItem("user-number"));
+var userNum=JSON.parse(localStorage.getItem("login-data"));
 document.getElementById("number_or").textContent="+91 "+ userNum;
 
 
@@ -85,13 +85,16 @@ function formS(event){
     if(val!=OTP){
         document.querySelector(".success").textContent=""
         localStorage.setItem("status",false)
-        localStorage.setItem("login-data","")
+        // localStorage.setItem("login-data","")
         alert(`Invalid...!, Your 4 Digit OTP is "${val}"`)
         return
     }else{
+        console.log(val)
+        let num =JSON.parse(localStorage.getItem("login-data")) || ""
        let verify = localStorage.getItem("user-number")
-       localStorage.setItem("login-data",verify)
+       localStorage.setItem("login-data",num)
      localStorage.setItem("status",true)
+     
      window.location.assign("./index.html");
      
     }

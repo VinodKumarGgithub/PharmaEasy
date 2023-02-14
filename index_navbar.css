@@ -1,13 +1,22 @@
  /* navbar */
  #navbar{
    display: flex;
-   width: 100%;
+   width: 97.7%;
    justify-content: space-between;
    padding-left: 1px;
    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
    /* height: 80px; */
    padding:10px 15px;
    /* border: 1px solid red; */
+  }
+  #count-item{
+   color:white;
+   background-color:#f47779;
+   padding:0px 7px;
+   border-radius: 100%;
+   font-size: 9px;
+   margin-left: -9px;
+   margin-top: -9px;
   }
   #left-nav{
    display: flex;
@@ -24,8 +33,7 @@
    border: none;
    font-size: 15px;
    font-weight: 500;
-   margin-top: -20px;
-   margin-right: 20px;
+   margin-right: 25px;
    background-color: white;
    /* border:1px solid red; */
   }
@@ -73,7 +81,7 @@
    justify-content: space-between;
    width: 35%;
    /* border: 1px solid red; */
-   margin-right:40px ;
+   /* margin-right:40px ; */
   }
    
   span{
@@ -89,7 +97,7 @@
    align-items: start;
  }
  #profile-page>p{
-   margin-bottom: -3px;
+   margin-bottom: -15px;
  }
 
   div>button{
@@ -106,7 +114,7 @@
 
  #catagory-nav{
  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
- padding-top: 18px;
+ padding: 16px 0px;
  }
 #catagory-nav>div{
    width: 60%;
@@ -128,7 +136,7 @@
   font-size: 14px;
   font-weight : 500;
   line-height: 24px;
-  margin-bottom: 14px;
+  
   /* border: 1px solid black; */
 }
 #under{

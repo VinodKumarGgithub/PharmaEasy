@@ -9,6 +9,15 @@
    padding: 15px;
    /* Fborder: 1px solid red; */
   }
+  #count-item{
+   color:white;
+   background-color:#f47779;
+   padding:0px 7px;
+   border-radius: 100%;
+   font-size: 9px;
+   margin-left: -9px;
+   margin-top: -9px;
+  }
   #left-nav{
    display: flex;
    justify-content: space-between;

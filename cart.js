@@ -10,7 +10,16 @@ function checkCart(){
     window.location.href="./Delivery_slot.html";
   }
 }
+var user_number = localStorage.getItem("login-data") || []
+var userArr =JSON.parse(localStorage.getItem("user-data")) || []
+
+userArr.map(function(ele,index){
+console.log(ele)
+if(ele.ph == user_number ){
 displaycart();
+}
+})
+
 
 function displaycart(){
 
